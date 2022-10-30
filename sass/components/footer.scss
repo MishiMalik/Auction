@@ -1,0 +1,57 @@
+.desktop-footer{
+    height: 225px !important;
+    background-color: $blue;
+    @media only screen and (max-width: 767px) {
+        height: 100% !important;
+    }
+
+    .f-social-div{
+        border-radius: 50%;
+        height: 33px;
+        width: 33px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px !important;
+        i{
+            font-size: 1.5rem !important;
+            &:hover{
+                color: white !important;
+            }
+        }
+        &:hover{
+            background-color: transparent !important;
+            color: white !important;
+        }
+    }
+    .f-logo-div{
+        // border: 1px solid white !important;
+        padding: 3px 7px;
+        border-radius: 5px;
+        img{
+            height: 47px;
+             width: 23rem;
+        }
+    }
+    .f-links{
+        margin-bottom: 15px;
+        a{
+            font-size: 1.6rem;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .f-contact-heading{
+        font-size: 1.4rem;
+        span{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    .copy-right-text{
+        font-size: 1.3rem;
+    }
+}

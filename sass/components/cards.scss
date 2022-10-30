@@ -1,0 +1,91 @@
+
+/* -------------------------------------
+card
+-------------------------------------- */
+.card{
+    position: relative;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 3px;
+}
+.card:hover{
+    box-shadow: 0 1px 1px #0000001a;
+}
+.card-image{
+    height: 200px;
+    padding: 15px;
+    width: 100%;
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-text{
+    padding: 0px 15px 15px 15px;
+    text-align: center;
+}
+.card-txt{
+    font-size: 16px;
+    color: #141a1d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: 500;
+}
+.price{
+    font-size: 22px;
+    font-weight: 600;
+    color:#4B3591;
+    padding: 14px 0 12px;
+}
+.start-price{
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color:#4B3591;
+}
+.deatils{
+    font-size: 15px;
+    color: #fff;
+    background:#4B3591;
+    padding: 8px 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    display: inline-block;
+    border: 2px solid#4B3591;
+}
+.deatils:hover{
+    background-color: white;
+    color:#4B3591;
+}
+.time{
+    font-size: 14px;
+}
+.heart-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 30px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex !important;
+    justify-content: center !important;
+     align-items: center;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.heart-icon .bi-suit-heart-fill{
+    font-size: 15px;
+    color:#4B3591 !important;
+    margin-top: 3px;
+}
+.heart-icon:hover .bi-suit-heart-fill{
+    font-size: 15px;
+    color:gray !important;
+    margin-top: 3px;
+    
+}

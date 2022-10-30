@@ -1,0 +1,810 @@
+// Sign Up and sign in======================================
+.sign__box{
+    border: 1px solid #ccc;
+    padding:10px 20px;
+    border-radius: 5px;
+    @media only screen and (max-width: 767px) {
+      border: none;
+      margin-top: 0px !important;
+    }
+}
+.sign-body{
+    padding: 0px !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+      @media only screen and (max-width: 767px) {
+          justify-content: flex-start;
+          align-self:flex-start;
+          padding-top: 50px !important;
+    }
+}
+// .sign2-body{
+//     padding: 0px !important;
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-self: center;
+// }
+.navbar-brand-sign {
+    height: 70px;
+    width: auto;
+    padding-top: 10px;
+   
+}
+
+.sign-heading-small h4{
+    display: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color:$black ;
+    text-align: center;
+    margin: 5px 0px !important;
+    @media only screen and (max-width: 767px) {
+       display: block;
+       text-align: center;
+      
+      }
+}
+
+.sign-heading h4{
+    font-size: 2rem;
+    font-weight: 500;
+    color:$black ;
+   
+}
+.sign-heading2 h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:$black ;
+    @media only screen and (max-width: 767px) {
+        font-size: 1.6rem;
+    }
+    @media only screen and (max-width: 479px) {
+        font-size: 1.7rem;
+    }
+}
+.sign__form-label{
+    font-size: 16px;
+    font-weight: 500;
+    @media only screen and (max-width: 480px) {
+        font-size: 1.65rem;
+      }
+}
+.sign-icon{
+    color: darkgray;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 10px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+.sign-input{
+    position: relative;
+    .sign__form-input{
+            font-size: 15rem;
+            padding: 7px 28px;
+            transition: all 0.5s ease-in-out;
+            border-radius: 3px !important;
+            &:hover,
+            &:focus{
+                box-shadow: none;
+                border: 1px solid #ccc !important;
+                border: 1px solid $blue !important;
+            } 
+            & option .selected-option{
+                color: red !important;
+            }
+    }
+}
+.continue-google__btn{
+    display: flex;
+    justify-content: center;
+
+    button{
+        width: 100%;
+        background-color: transparent;
+        border: none !important;
+        a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 20px !important;
+        border: 2px solid $red !important;
+        border-radius: 3px ;
+        background-color: $red !important;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        text-align: center !important;
+        justify-content: center;
+        &:hover{
+            color: $red !important;
+            background-color: white !important;
+            border: 2px solid $red !important;
+        }
+        // @media only screen and (max-width: 767px) {
+        //     font-size: 15px !important;
+        //     width: 100% !important;
+        //     padding: 10px 20px !important;
+        //     border-radius: 4px ;
+        // }
+        // @media only screen and (max-width: 479px) {
+        //     font-size: 16rem !important;
+        // }
+        }
+        
+    }
+}
+.sign__btn{
+    display: flex;
+    justify-content: center;
+    .continue-google{
+        background-color:#EA4335 !important ;
+        }
+    button{
+        width: 100%;
+        background-color: transparent;
+        border: none !important;
+        a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 20px !important;
+        border: 2px solid $blue !important;
+        border-radius: 3px ;
+        background-color: $blue !important;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        text-align: center !important;
+        justify-content: center;
+        &:hover{
+            color: $blue !important;
+            background-color: white !important;
+            border: 2px solid $blue !important;
+        }
+        // @media only screen and (max-width: 767px) {
+        //     font-size: 1.5rem !important;
+        //     width: 100% !important;
+        //     padding: 10px 20px !important;
+        //     border-radius: 4px ;
+        // }
+        // @media only screen and (max-width: 479px) {
+        //     font-size: 16rem !important;
+        // }
+        }
+        
+    }
+}
+
+// .sign__btn-small{
+//     // display: none !important;
+//     display: flex;
+//     justify-content: center;
+//     @media only screen and (max-width: 767px) {
+//         display: block  !important;
+//     }
+//     button{
+//         width: 100% !important;
+//         background-color: transparent !important;
+//         border: none !important;
+//         a{
+//         text-decoration: none !important;
+//         font-size: 1.5rem !important;
+//         font-weight: 600 !important;
+//         padding: 6px 20px !important;
+//         border: none !important;
+//         border-radius: 3px ;
+//         background-color: white !important;
+//         color: $blue !important;
+//         border: 2px solid $blue !important;
+//         width: 100% !important;
+//         flex-wrap: 1;
+//         display: flex;
+//         justify-content: center;
+//         @media only screen and (max-width: 767px) {
+//             // display: block  !important;
+//             width: 100% !important;
+//             padding: 8px 20px !important ;
+//             border-radius: 4px ;
+//             font-weight: 600 !important;
+//             font-size: 1.5rem !important;
+//         }
+//         @media only screen and (max-width: 479px) {
+//             font-size: 1.6rem !important;
+//         }
+//         &:hover{
+//             color: white !important;
+//             background-color: $blue !important;
+//         }
+//         }
+       
+//     }
+// }
+// .ask-account{
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-self: center;
+//     @media only screen and (max-width: 767px) {
+//         display: none;
+//     }
+//     p{
+//         padding-top: 10px;
+//         font-size: 1.5rem;
+//         a{
+//             font-weight: 600;
+//             color: $blue;
+//             text-decoration: none;
+//         }
+//     }
+
+// }
+.ask-account{
+    display: block !important;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
+    p{
+        padding-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        a{
+            font-weight: 600;
+            color: $blue;
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 479px) {
+            font-size: 15px;
+         }
+    }
+}
+.line{
+    font-size: 2rem;
+    width: 120px;
+    background-color: $blue;
+    align-self: center;
+    box-shadow: 0 0 3px darkgray;
+    border: 1px solid $blue;
+    border-radius: 100%;
+    opacity: 0.2;
+}
+
+// sign fields
+
+.sign__field {
+    display: flex;
+    flex-flow: column-reverse;
+    height: 65px;
+    margin-top: -14px;
+    @media only screen and (max-width: 767px) {
+       margin-top: -10px;
+    }
+    @media only screen and (max-width: 479px) {
+        margin-top: -10px;
+     }
+  }
+  .sign__field-label, .sign__field-input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+  
+  .sign__field-input {
+      font-size: 13px;
+      padding: 8px 10px;
+      transition: all 0.5s ease-in-out;
+      border-radius: 3px !important;
+      border: 1px solid #ccc;
+         @media only screen and (max-width: 767px) {
+            font-size: 15px;
+            padding: 8px 10px;
+        }
+        @media only screen and (max-width: 479px) {
+            font-size: 16px;
+            padding: 11px 10px;
+        }
+  }
+  
+  
+  .sign__field-input:focus {
+   border: 2px solid $blue;
+   outline: none;
+  }
+  
+  .sign__field-label {
+    text-transform: capitalize;
+    font-size: 9px;
+    color: #666;
+    background-color: white;
+    @media only screen and (max-width: 767px) {
+        font-size: 10px;
+    }
+    @media only screen and (max-width: 479px) {
+        font-size: 11px;
+    }
+  }
+  /**
+  * Translate down and scale the label up to cover the placeholder,
+  * when following an input (with placeholder-shown support).
+  * Also make sure the label is only on one row, at max 2/3rds of the
+  * field—to make sure it scales properly and doesn't wrap.
+  */
+  .sign__field-input:placeholder-shown + .sign__field-label {
+    cursor: text;
+    max-width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(10px, 2.805rem) scale(1.5);
+    @media only screen and (max-width: 767px) {
+        transform: translate(10px, 3.005rem) scale(1.5);
+    }
+    @media only screen and (max-width: 479px) {
+        transform: translate(10px, 3.955rem) scale(1.5);
+    }
+  }
+  /**
+  * By default, the placeholder should be transparent. Also, it should 
+  * inherit the transition.
+  */
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+  /**
+  * Show the placeholder when the input is focused.
+  */
+  .sign__field-input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  /**
+  * When the element is focused, remove the label transform.
+  * Also, do this when the placeholder is _not_ shown, i.e. when 
+  * there's something in the input at all.
+  */
+  .sign__field-input:not(:placeholder-shown) +.sign__field-label,
+  .sign__field-input:focus + .sign__field-label {
+    transform: translate(10px, 10px) scale(1);
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 0px 4px;
+    width: fit-content;
+    color: $blue;
+    font-weight: 500;
+    @media only screen and (max-width: 767px) {
+        font-size: 1.5rem;
+    }
+  }
+  .sign-select{
+      font-size: 1.3rem;
+      padding: 7px 10px;
+      transition: all 0.5s ease-in-out;
+      border-radius: 3px !important;
+      border: 1px solid #ccc;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 1.4rem;
+        padding: 12px 10px;
+    }
+    @media only screen and (max-width: 479px) {
+        font-size: 1.6rem;
+        padding: 12px 10px;
+        margin-top: 4px!important;
+    }
+  }
+  .sign-text-desktop{
+      font-size: 1.3rem !important;
+      @media only screen and (max-width: 767px) {
+         display: none !important;     
+    }
+  }
+  .sign-text-small{
+    // display: none !important;   
+    font-size: 1.3rem !important;
+    @media only screen and (max-width: 767px) {
+        display: block !important;   
+        p{
+          font-size: 1.4rem;
+        }
+     
+  }
+}
+
+.forget-password{
+a{
+    font-size: 13px;
+color: #666 !important;
+}
+}
+  .check2 {
+      position: absolute !important;
+      top: 2px !important;
+      left: 0px !important;
+      height: 14px !important;
+      width: 14px !important;
+      background-color: #f8f8f8 !important;
+      border: 1px solid #ccc !important;
+      border-radius: 3px !important;
+      @media only screen and (max-width: 767px) {
+        height: 16px !important;
+        width: 16px !important;
+          top: 1px !important;
+    }
+  }
+  .brand .tick input:checked~.check2,
+  .rating .tick input:checked~.check2 {
+      background-color: white !important;
+  }
+  .tick .check2:after {
+      left: 3.5px;
+      top: 0px;
+      width: 5px;
+      height: 10px;
+      border: solid $blue;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg) scale(2);
+      @media only screen and (max-width: 767px) {
+        left: 5px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+    }
+  }
+  .tick2{
+      font-size: 1.3rem !important;
+      padding-left: 20px !important;
+      @media only screen and (max-width: 767px) {
+        font-size: 1.4rem !important;
+    }
+    @media only screen and (max-width: 479px) {
+        font-size: 1.6rem !important;
+    }
+  }
+  .check-input .tick input:checked~.badge {
+      background-color: white !important;
+  }
+  // .field-icon{
+  //     font-size: 1.7rem;
+  //     color: darkgray;
+  //     margin-top: -29px;
+  //     margin-left: 10px;
+  //     position: relative;
+  //     z-index: 20;
+  //     width: fit-content;
+  // }
+    
+
+// FeedBack Page=====================================================
+.feedback-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    @media only screen and (max-width: 767px) {
+        display: flex;
+        justify-content: flex-start !important;
+        margin-left: 5px;
+    }
+}
+.navbar-brand-feedback {
+    height: 40px;
+    width: 15rem;
+    display: flex;
+  img{
+      height: 100%;
+      width: 100%;
+  }
+}
+.sign-heading p{
+    font-size: 1.3rem;
+    color: black;
+}
+.feedback-heading h2{
+font-size: 2.1rem;
+font-weight:500;
+color: $blue;
+@media only screen and (max-width: 1050px) {
+    font-size: 1.9rem;
+}
+@media only screen and (max-width: 1050px) {
+    font-size: 2rem;
+}
+@media only screen and (max-width: 480px) {
+    font-size: 2.2rem;
+  }
+}
+.feedback-heading p{
+    font-size: 1.5rem;
+    font-weight:500;
+    @media only screen and (max-width: 480px) {
+        font-size: 1.6rem;
+      }
+}
+.feedback__textarea{
+    border-radius: 4px !important;
+    border: 1px solid #ccc !important;
+    font-size: 1.4rem;
+    padding: 5px;
+    &:hover,
+    &:active,
+    &:focus{
+        border: 1px solid $blue;
+        box-shadow: none;
+        outline: none;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.5rem;
+      }
+}
+.feedback__card{
+  background-color: white;
+  box-shadow: 0 0 2px #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 5px #ccc;
+  }
+  display: flex;
+  &-img{
+      height: 100px;
+      max-height: 120px;
+      width: 100px;
+      flex-shrink: 0;
+      object-fit:cover;
+      object-position: center;
+      margin-right: 5px;
+      overflow: hidden;
+      border-radius: 5px 0px 0px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+          height: 100%;
+          width: 100%;
+          object-fit:cover;
+          object-position: center;
+      }
+  }
+  &-detail{
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      p{
+          font-size: 1.4rem;
+          color: rgb(68, 68, 68);
+          font-weight: 400;
+          @media only screen and (max-width: 1250px) {
+            font-size: 1.3rem;
+          }
+          @media only screen and (max-width: 992px) {
+            font-size: 1.5rem;
+          }
+          @media only screen and (max-width: 516px) {
+            font-size: 1.3rem;
+          }
+          @media only screen and (max-width: 480px) {
+            font-size: 1.6rem;
+          }
+      }
+      span{
+          font-size: 1.5rem;
+          color: $blue;
+          font-weight: 500;
+          @media only screen and (max-width: 1250px) {
+            font-size: 1.3rem;
+          }
+          @media only screen and (max-width: 992px) {
+            font-size: 1.5rem;
+          }
+          @media only screen and (max-width: 480px) {
+            font-size: 1.6rem;
+          }
+      }
+      &--code{
+          display: flex;
+          align-items: center;
+          h5{
+              font-size: 1.4rem;
+              font-weight: 600;
+              @media only screen and (max-width: 480px) {
+                font-size: 1.5rem;
+              }
+          }
+          p{
+              font-size: 1.4rem;
+              font-weight: 500;
+              @media only screen and (max-width: 480px) {
+                font-size: 1.54rem;
+              }
+          }
+      }
+  }
+}
+.product__number{
+    display: flex !important;
+    align-items: center;
+    h5{
+        font-size: 1.8rem;
+        font-weight: 500;
+        @media only screen and (max-width: 480px) {
+            font-size: 1.9rem;
+          }
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 400;
+        @media only screen and (max-width: 480px) {
+            font-size: 1.8rem;
+          }
+    }
+}
+.no-border{
+    border: none !important;
+    background-color: #ffffff;
+}
+.no-border-radius{
+    border-radius: 3px !important;
+}
+.no-box-shadow-sm{
+    @media only screen and (max-width: 767px) {
+        box-shadow: none !important;
+        border-radius: 2px !important;
+    }
+}
+.sign-text p{
+    font-size: 1.44rem !important;
+    @media only screen and (max-width: 479px) {
+        font-size: 1.6rem !important;
+    }
+    span{
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    @media only screen and (max-width: 479px) {
+        font-size: 1.6rem !important;
+    }
+    }
+}
+.sm-mt-2{
+    margin-top: 10px;
+}
+// ==========================Seller Creation
+.clr-blue{
+    color: $blue !important;
+}
+// ===================================Resolve Query
+.query__heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.query__text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 2vw;
+    @media only screen and (max-width: 479px) {
+        font-size: 1.6rem !important;
+    }
+}
+.info-icon{
+    width:2rem;
+    height:2.4rem;
+}
+
+// =========================================My orders
+.order{
+    &__header{
+        padding-bottom: 3px;
+        &-number{
+            &--num{
+                font-size: 1.8rem;
+                font-weight: 500 !important;
+                // color: #404145;
+                color: $blue;
+            }
+            .replace-date{
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+            }
+        }
+
+        &-price p{
+            font-size: 2rem;
+            font-weight: 600 !important;
+            // color: #404145;
+            color: $black;
+        }
+    }
+    &__text{
+        p{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #404145;
+            @media only screen and (max-width:479px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &-sku{
+            p{
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $black;
+                margin: .55rem 0px;
+            }
+        }
+        &-product{
+           p{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: .55rem 0px;
+            @media only screen and (max-width:479px) {
+                font-size: 1.6rem;
+            }
+           }
+        }
+        &-duration{
+            text-align: end;
+            
+            @media only screen and (max-width:479px) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__status-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media only screen and (max-width: 767px) {
+            display: flex;
+           flex-direction: row;
+        }
+        .order__text-date{
+            flex: 1 1 auto;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #404145;
+            .fa-download{
+                font-size: 1.3rem;
+                color: white;
+                font-weight: 400;
+            }
+            @media only screen and (max-width:479px) {
+                font-size: 1.5rem;
+            }
+        }
+        
+       
+    }
+    &__button{
+        
+        button{
+        background-color: $blue;
+        border-radius: 3px;
+        border: 1px solid $blue;
+        padding: 3px 10px;
+        width: fit-content;
+        margin-bottom: auto;
+        a{
+            font-size: 1.3rem;
+            color: white;
+            text-decoration: none;
+        }
+        }
+       
+    }
+}
+
+
+

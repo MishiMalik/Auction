@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- style sheet -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- owl carousel -->
+    <script type="text/javascript" src="assets/Owl-carousel/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <title>BidBlock-Home</title>
+</head>
+<body class="account-body" id="account-body">
+    <div class="allButFooter mb-4">
+
+        <!-- ====================Header part==================== -->
+        <header class="header fixed-top market-header">
+            <div class="container  header-contain  "  >
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="container-fluid small-cont px-0 ">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class=""></a>
+        
+                        <form class="d-flex nav-input small-nav-input order2">
+                            <input class="form-control me-2" type="search" placeholder="Search product or sku ..." id="input1"
+                                aria-label="Search product or sku ...">
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </div>
+                        </form>
+        
+                        <div class="destop-header-menu">
+                            <ul class="navbar-nav mb-lg-0 sidenav-content">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Sign In</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                    
+                                        <a class="btn nav-link nav-link-icon flex-column d-flex align-items-center justify-content-between" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu pe-3" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                        </ul>
+                                      </div>
+                                                                 
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-icon" href="">
+                                        <i class="fas fa-heart heart"></i>
+                                        <i class="fas fa-user"></i>
+                                    </a>                               
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="openHeadbtn" onclick="openHeadNav()">&#9776; </button>
+                            
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- =====================small header sidebar============= -->
+        <div class="headsidebar pt-5"   id="HeadSidebar">
+            <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
+            <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
+                <li class=" px-auto">
+                 <a href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class="head-side-logo img-fluid"></a>
+                </li>
+                <li class=" d-flex align-items-center justify-content-start w-100">
+                   
+                    <a class="nav-link active ms-4" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="">About Us</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-user-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="">Contact</i></a>
+                </li>
+   
+                <li class=" d-flex  w-100 ">
+                    <a class="nav-link ms-4" href="">Privacy Policy</i></a>
+                </li>
+               
+                <li class="mt-auto  d-flex align-items-center justify-content-center ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    <a class="nav-link  mx-2 side-sign-btn" href="">Sign In</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ====================Header part End==================== -->
+
+        <!-- =======================================main part start============ -->
+        <main class="mainPart" id="main">
+            <!-- ======================hero section============ -->
+            <section class="  hero-section">
+
+                <div class="container ">
+
+                    <div class="row ">
+
+
+                        <!-- =========================================================================================== -->
+                        <!--========================= Popular Categories===================== -->
+                        <!-- =========================================================================================== -->
+                        <!-- <div class="col-xl-3 col-md-3 col-12 ">
+                            <div class="list-group ">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fal fa-chair list-icon"></i></span> Furniture
+                                    <span class="ms-auto">></i></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fal fa-mobile-alt list-icon"></i></span> Accessories
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center  ">
+                                    <span class=""><i class="fal fa-tshirt list-icon"></i></span> Clothing
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-watch list-icon"></i></span> Wristwatch
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-camera-retro list-icon"></i></span> Camera
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-watch list-icon"></i></span> Laundry
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-camera-retro list-icon"></i></span> Camera
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-watch list-icon"></i></span> Laundry
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-camera-retro list-icon"></i></span> Camera
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-watch list-icon"></i></span> Laundry
+                                    <span class="ms-auto">></span>
+                                </a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ">
+                                    <span class=""><i class="fas fa-camera-retro list-icon"></i></span> Camera
+                                    <span class="ms-auto">></span>
+                                </a>
+                            </div>
+                        </div> -->
+
+
+                        <!-- =========================================================================================== -->
+                        <!--=========================Hero Carousel===================== -->
+                        <!-- =========================================================================================== -->
+                        <div class="col-xl-12 col-md-12 col-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner carousel-inner-home">
+                                    <div class="carousel-item active carousel-item-home">
+                                        <img src="assets/img/categories.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item carousel-item-home">
+                                        <img src="assets/img/john-torcasio-TJrkkhdB39E-unsplash.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item carousel-item-home">
+                                        <img src="assets/img/bagus-hernawan-A6JxK37IlPo-unsplash.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+
+                                <div class="aucation-text-div">
+                                    <div><h1 class="aucation-heading ">Aucation</h1></div>
+                                    <div><p class="aucation-text pb-0 mb-0">Powerful Timed online aucation software that works for you.</p><br>
+                                    </div>
+                                    <div>                                     <p class="aucation-text mb-0 mb-0">Connect with bidders online to sell your assets in real tim invoicing</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================================================================================== -->
+            <!--========================= Categories on mobile===================== -->
+            <!-- =========================================================================================== -->
+            <div class="container  mob-cat my-5 px-0 w-100">
+                    <div class="row w-100 d-flex justify-content-evenly p-0 m-0">
+                        <div  class="cat s-cat">
+                            <div class="cat-icon ">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <div class="cat-label">
+                                All
+                            </div>
+                        </div>
+                            <div class="cat s-cat">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-watch "></i>
+                                </div>
+                                <div class="cat-label">
+                                    watch
+                                </div>
+                            </div>                       
+                            <div class="cat s-cat">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-chair-office "></i>
+                                </div>
+                                <div class="cat-label">
+                                    Furniture
+                                </div>
+                            </div>                       
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="cat-label">
+                                    Cars
+                                </div>
+                            </div>                        
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-mobile-alt "></i>
+                                </div>
+                                <div class="cat-label">
+                                    Mobile
+                                </div>
+                            </div>
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-atom-alt"></i>
+                                </div>
+                                <div class="cat-label">
+                                    Electronics
+                                </div>
+                            </div>                       
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="cat-label">
+                                    Fashion
+                                </div>
+                            </div>                       
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-paw"></i>
+                                </div>
+                                <div class="cat-label">
+                                    Pets
+                                </div>
+                            </div>                        
+                            <div class="cat ">
+                                <div class="cat-icon ">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="cat-label">
+                                    Laptop
+                                </div>
+                            </div>
+                            <div class="cat s-cat">
+                                
+                                <!-- <div class="cat-label">
+                                    Others
+                                </div> -->
+                                <div class="dropdown">
+                                    
+                                    <a class="btn cat-label flex-column d-flex align-items-center justify-content-between" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="cat-icon ">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        Others
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu pe-3" aria-labelledby="dropdownMenuLink">
+                                      <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                      <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                      <li><a class="dropdown-item cat-label" href="#">Category</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        
+                    </div>
+            </div>
+
+            <div href="javascript:void(0)" id="close" onclick="closeNav()" class="closebtn"><span>&times;</span></div>
+            <div class="container">
+                <div class="row fixed-nav-div">
+                    <!-- =========================================================================================== -->
+                    <!--========================= Filter Side bar section===================== -->
+                    <!-- =========================================================================================== -->
+                    <div class="col-lg-3  pt-5">
+                        <div class="d-flex justify-content-between" onclick="openNav()">
+                            <div class="second-heading small-heading d-none mx-4">Available Products</div>
+                            <span class="filter-icon mx-4">
+                                <p class="m-0 p-0"> Filter</p>
+                                <div class="ms-2">
+                                   <svg width="20px" height="12px" viewBox="0 0 18 12" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Icons" stroke="#436be0" stroke-width=".1" fill="none" fill-rule="evenodd">
+                                            <g id="Rounded" transform="translate(-443.000000, -1488.000000)">
+                                                <g id="Content" transform="translate(100.000000, 1428.000000)">
+                                                    <g id="-Round-/-Content-/-filter_list"
+                                                        transform="translate(340.000000, 54.000000)">
+                                                        <g transform="translate(0.000000, 0.000000)">
+                                                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                                            <path
+                                                                d="M11,18 L13,18 C13.55,18 14,17.55 14,17 C14,16.45 13.55,16 13,16 L11,16 C10.45,16 10,16.45 10,17 C10,17.55 10.45,18 11,18 Z M3,7 C3,7.55 3.45,8 4,8 L20,8 C20.55,8 21,7.55 21,7 C21,6.45 20.55,6 20,6 L4,6 C3.45,6 3,6.45 3,7 Z M7,13 L17,13 C17.55,13 18,12.55 18,12 C18,11.45 17.55,11 17,11 L7,11 C6.45,11 6,11.45 6,12 C6,12.55 6.45,13 7,13 Z"
+                                                                id="🔹Icon-Color" fill="#1D1D1D"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+    
+                                </div>
+                            </span>
+                        </div>
+                        <div class="sidenav sm-padding bg-light" id="mySidenav">
+                            <div class="sidenav-content">
+                                <!-- <div class="results-number d-flex justify-content-between">28 Results <span>Clear All</span>
+                                </div> -->
+                                <div class="collapse__section d-flex  flex-column ">
+                                    <button class="collapsible__div ">Price range
+                                        <small id="selected"></small>
+                                    </button>
+                                    <!-- Price range -->
+                                    <div class="content__div" aria-labelledby="filterhead5" data-parent="#filters">
+                                        <div class=" px-0 ">
+                                            <div class="">
+                                                <div class="price-range">
+                                                    <!-- <div id="slider-range" class="price-filter-range" name="rangeInput">
+                                            </div> -->
+    
+                                                    <div class="d-flex  align-items-center">
+                                                        <div>
+                                                            <label for="" class="range-label">Min<span>(3500)</span></label>
+                                                            <input type="number" min=0 max="3500"
+                                                                oninput="validity.valid||(value='0');" id="min_price"
+                                                                class="price-range-field form-control" />
+                                                        </div>
+                                                        <div class="space border-top mx-2 w-25 mt-4 position-relative ">
+                                                        </div>
+                                                        <div>
+                                                            <label for=""
+                                                                class="range-label">Max<span>(223300)</span></label>
+                                                            <input type="number" min=0 max="22233300"
+                                                                oninput="validity.valid||(value='10000');" id="max_price"
+                                                                class="price-range-field form-control" />
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="d-flex justify-content-between mb-2 mt-4">
+                                                        <button class=" range-btn ">Cancel</button>
+                                                        <button class=" range-btn  ">Apply</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div">Categories<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div" id="abc">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications
+                                                    <input type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Product type<small id="selected">
+    
+                                        </small></button>
+    
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications
+                                                    <input type="checkbox" class="checked" value="1" name="fooby[1][]">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics
+                                                    <input type="checkbox" class="checked" value="1" name="fooby[1][]">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check" value="1" name="fooby[1][]"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div">Categories<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div" id="abc">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Sub-Categories<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Condition<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">State<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">State <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Country<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">City<input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Categories<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Featured
+                                                    Brans<input type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Sub-Categories<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Condition<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                                <div class="collapse__section d-flex  flex-column">
+                                    <button class="collapsible__div ">Condition<small id="selected">
+    
+                                        </small></button>
+                                    <div class="content__div">
+                                        <form class="brand">
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                        type="checkbox" class="checked">
+                                                    <span class="check"></span>
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="sideBar-btn" id="side-btn">
+                                    <button class="btn side-btn" id="side-btn">Finished</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- =========================================================================================== -->
+                    <!-- ======================================Main Part /Cards==================================== -->
+                    <!-- =========================================================================================== -->
+                    <div class="col-lg-9 col-12  all-products" id="main2">
+                        <div class=" row  ">
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                           <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/item1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Officiis, minima.</p>
+                                    <h1 class="price mb-0 pb-0">$49.00</h1>
+                                    <div class="start-price mb-0 pb-0">Start price</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href=""><button class="deatils">Details</button></a>
+                                        <div class="time d-flex flex-wrap justify-content-end">
+                                            <div class="d-flex">
+                                                <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                            </div>
+                                            <div class="d-flex">
+                                                <b>20</b>&nbsp;Hours
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heart-icon">
+                                    <i class="bi bi-suit-heart-fill"></i>
+                                    <!-- <i class="bi bi-suit-heart"></i> -->
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+    
+
+                        <!-- =========================================================================================== -->
+                        <!-- =========================================================================================== -->
+                        <!--========================= Pagination section===================== -->
+                        <!-- =========================================================================================== -->
+                        <!-- =========================================================================================== -->
+                    
+                        <div class="row d-flex justify-content-center w-100 align-items-center my-4">
+                            <nav aria-label="..." class="pagination-nav">
+                                <ul class="pagination d-flex justify-content-center align-items-center">
+                                    <li class="page-item ">
+                                        <a class="page-link3" href="#" aria-label="Previous"><i
+                                                class="fas fa-arrow-left "></i></a>
+                                    </li>
+                                    <li class="page-item disabled me-3">
+                                        <span class="page-link1 ">Prev</span>
+                                    </li>
+    
+                                    <li class="page-item  "><a class="page-link px-3 " href="#">1</a></li>
+                                    <li class="page-item " aria-current="page">
+                                        <span class="page-link active">2</span>
+                                    </li>
+                                    <li class="page-item " aria-current="page">
+                                        <span class="page-link">3</span>
+                                    </li>
+                                    <li class="page-item " aria-current="page">
+                                        <span class="page-link">4</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    
+                                    <li class="page-item  ms-3">
+                                        <a class="page-link1" href="#">Next</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link3" href="#" aria-label="Previous"><i
+                                                class="fas fa-arrow-right "></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                     
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+    
+        </div>
+
+            <!-- =========================================================================================== -->
+            <!--========================= Card Slider===================== -->
+            <!-- =========================================================================================== -->
+            <div class="container ">
+                <div class="row">
+                  <div class="col-lg-12">
+                          <div class="owl-carousel owl-theme ">
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/item1.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="card-text">
+                                  <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis, minima.</p>
+                                  <h1 class="price mb-0 pb-0">$49.00</h1>
+                                  <div class="start-price mb-0 pb-0">Start price</div>
+                                  <div class="d-flex justify-content-between align-items-center mt-3">
+                                      <a href=""><button class="deatils">Details</button></a>
+                                      <div class="time d-flex flex-wrap justify-content-end">
+                                          <div class="d-flex">
+                                              <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                          </div>
+                                          <div class="d-flex">
+                                              <b>20</b>&nbsp;Hours
+                                          </div>
+                                           
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="heart-icon">
+                                  <i class="bi bi-suit-heart-fill"></i>
+                                  <!-- <i class="bi bi-suit-heart"></i> -->
+                              </div>
+                          </div>
+      
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/item2.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="card-text">
+                                  <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis, minima.</p>
+                                  <h1 class="price mb-0 pb-0">$49.00</h1>
+                                  <div class="start-price mb-0 pb-0">Start price</div>
+                                  <div class="d-flex justify-content-between align-items-center mt-3">
+                                      <a href=""><button class="deatils">Details</button></a>
+                                      <div class="time d-flex flex-wrap justify-content-end">
+                                          <div class="d-flex">
+                                              <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                          </div>
+                                          <div class="d-flex">
+                                              <b>20</b>&nbsp;Hours
+                                          </div>
+                                           
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="heart-icon">
+                                  <i class="bi bi-suit-heart-fill"></i>
+                                  <!-- <i class="bi bi-suit-heart"></i> -->
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/item3.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="card-text">
+                                  <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis, minima.</p>
+                                  <h1 class="price mb-0 pb-0">$49.00</h1>
+                                  <div class="start-price mb-0 pb-0">Start price</div>
+                                  <div class="d-flex justify-content-between align-items-center mt-3">
+                                      <a href=""><button class="deatils">Details</button></a>
+                                      <div class="time d-flex flex-wrap justify-content-end">
+                                          <div class="d-flex">
+                                              <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                          </div>
+                                          <div class="d-flex">
+                                              <b>20</b>&nbsp;Hours
+                                          </div>
+                                           
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="heart-icon">
+                                  <i class="bi bi-suit-heart-fill"></i>
+                                  <!-- <i class="bi bi-suit-heart"></i> -->
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/item4.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="card-text">
+                                  <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis, minima.</p>
+                                  <h1 class="price mb-0 pb-0">$49.00</h1>
+                                  <div class="start-price mb-0 pb-0">Start price</div>
+                                  <div class="d-flex justify-content-between align-items-center mt-3">
+                                      <a href=""><button class="deatils">Details</button></a>
+                                      <div class="time d-flex flex-wrap justify-content-end">
+                                          <div class="d-flex">
+                                              <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                          </div>
+                                          <div class="d-flex">
+                                              <b>20</b>&nbsp;Hours
+                                          </div>
+                                           
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="heart-icon">
+                                  <i class="bi bi-suit-heart-fill"></i>
+                                  <!-- <i class="bi bi-suit-heart"></i> -->
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/item5.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="card-text">
+                                  <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Officiis, minima.</p>
+                                  <h1 class="price mb-0 pb-0">$49.00</h1>
+                                  <div class="start-price mb-0 pb-0">Start price</div>
+                                  <div class="d-flex justify-content-between align-items-center mt-3">
+                                      <a href=""><button class="deatils">Details</button></a>
+                                      <div class="time d-flex flex-wrap justify-content-end">
+                                          <div class="d-flex">
+                                              <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                          </div>
+                                          <div class="d-flex">
+                                              <b>20</b>&nbsp;Hours
+                                          </div>
+                                           
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="heart-icon">
+                                  <i class="bi bi-suit-heart-fill"></i>
+                                  <!-- <i class="bi bi-suit-heart"></i> -->
+                              </div>
+                          </div>
+              
+              
+                      </div>
+                      
+                  </div>
+                </div>
+              </div>
+
+
+
+           
+           
+        </main>
+    </div>
+    <!-- </div> -->
+    <!-- =========================================================================================== -->
+    <!--========================= Mobile Footer===================== -->
+    <!-- =========================================================================================== -->
+    <!-- <section>
+        <div class="mobile-bottom " id="mobile-footer">
+            <div class="items-lists">
+                <a href="index.html" class="list-item sm-footer-active">
+                    <div class="item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <div class="item-label">
+                        Home
+                    </div>
+                </a>
+
+                <div class="list-item" id="openHeader" onclick="openHeader()">
+                    <div class="item-icon">                       
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <div class="item-label">
+                        Search
+                    </div>
+                </div>
+
+
+                <div class="list-item ">
+                    <div class="item-icon2  ">
+                        <a href="market.html"><img src="assets/img/sm2.svg" alt="" class=""></a>
+                    </div>
+                </div>
+
+                <a href="seller-creation.html" class="list-item ">
+                    <div class="item-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="item-label">
+                        Sell
+                    </div>
+                </a>
+
+                <a href="account-wants.html" class="list-item ">
+                    <div class="item-icon">  
+                            <i class="fas fa-heart heart"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>                     
+                 
+                    <div class="item-label">
+                        Account
+                    </div>
+                </a>
+            </div>
+    </section> -->
+
+    
+
+    <!-- =========================================================================================== -->
+    <!--========================= BackDrawer section===================== -->
+    <!-- =========================================================================================== -->
+    <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeHeadNav()">
+
+    </div>
+    <div class="backdrop" id="backdrop2" href="javascript:void(0)" onclick="closeHeadNav()">
+
+    </div>
+
+
+
+    <!-- =========================================================================================== -->
+    <!--========================= Desktop Footer===================== -->
+    <!-- =========================================================================================== -->
+    <!-- Footer -->
+    <footer class="text-white desktop-footer mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-start py-4">
+                <div class="col-lg-4 col-md-4 col-12 ">
+                    <div class="d-flex justify-content-center ">
+                        <div class="f-logo-div">
+                            <a href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class="img-fluid mb-2"></a>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex justify-content-center align-items-center">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Ticktok -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"> <img
+                                src="assets/img/pngaaa.com-4768645.png" alt="" class="img-fluid p-1">
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 mb-4 mb-md-0 d-flex justify-content-center">
+                    <ul class="list-unstyled mb-0 text-start">
+                        <li class="f-links">
+                            <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li class="f-links">
+                            <a href="about-us.html" class="text-white">About Us</a>
+                        </li>
+
+                        <li class="f-links">
+                            <a href="#!" class="text-white">Privacy Policy</a>
+                        </li>
+
+                        <li class="f-links">
+                            <a href="#!" class="text-white">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 mb-4 mb-md-0 d-flex justify-content-center">
+                    <div class="f-contact-heading ">
+                        Kindly Contact Us via:<br>
+                        <span>youremail@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 copy-right-text" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright © zogsales 2021.All rights reserved
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/Add Tags Input Box JavaScript/script.js"></script> -->
+
+           
+</body>
+
+</html>

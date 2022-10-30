@@ -1,0 +1,383 @@
+.carousel{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.aucation-text-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: linear-gradient(to right bottom, hsla(254, 46%, 39%, 0.492), hsla(254, 46%, 39%, 0.492));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 10;
+   padding: 10px;
+
+}
+.aucation-heading{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 10px;
+    @media only screen and (max-width:768px){
+        font-size: 3rem;
+  }
+   
+}
+.aucation-text{
+    font-size: 2rem;
+    color: white;
+    @media only screen and (max-width:768px){
+        text-align: center !important;
+  }
+}
+/* =========================================Hero section Start============================== */
+
+.list-group {
+    border-radius: 7px;
+}
+
+.list-group:hover {
+    border-radius: 7px;
+}
+
+.list-group-item span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #585757
+}
+
+.carousel-inner-home {
+    border-radius: 7px;
+}
+
+.carousel-item-home {
+    height: 40rem;
+    object-fit: contain;
+    
+}
+
+.carousel-item-home img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-indicators button {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.list-icon {
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 2.2rem;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.main-heading {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00161c;
+    text-align: left;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.cat-head {
+    margin-top: -60px;
+}
+
+.second-heading {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00161c;
+    text-align: left;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+
+.mt-120 {
+    margin-top: 12rem;
+}
+
+
+
+.list-group-item {
+    font-size: 1.3rem;
+    padding: .685rem 1rem;
+    background-color: #fff !important;
+    &:hover {
+        color: $black;
+        font-weight: 700 !important;
+    }
+}
+
+.list-group-header {
+    background-color: whitesmoke;
+    color: #00161c;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.list-group-header:hover {
+    background-color: #3254ba;
+    color: white;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.mob-cat {
+    display: none;
+}
+
+.head2-space {
+    margin: 12px 0px 18px 0px;
+}
+
+.hero-section {
+    margin-top: 1.5rem;
+}
+
+
+.small-banners {
+    margin-top: 1.5rem;
+}
+
+.small-banner-1 {
+    padding-right: 0.15rem;
+
+}
+
+.small-banner-2 {
+    padding-left: 0.15em;
+}
+
+.small-banner-img {
+    width: 100%;
+    height: 9.4rem;
+    border-radius: 4px;
+}
+
+
+ /* =======================categories on mobile================ */
+ .mob-cat {
+    display: flex;
+  flex-wrap: wrap !important;
+    
+
+}
+
+.cat {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 30px !important;
+    cursor: pointer;
+}
+
+.cat-icon {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.cat-icon i {
+    font-size: 2.5rem !important;
+    color: $blue;
+}
+
+.cat-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-section {
+    margin-top: .8rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .list-group-header {
+        background-color: $blue;
+        color: white;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    .list-group-header:hover {
+        background-color: $blue;
+        color: white;
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+}
+
+// @media only screen and (max-width: 991px){
+//     .hero-section{
+//         padding:10px 0px !important;
+//     }
+// }
+@media only screen and (max-width: 767px) {
+    .list-group {
+        display: none !important;
+    }
+
+    .carousel-inner-home {
+        height:100%!important;
+    }
+    // .aucation-text-div{
+    //     height: 400px !important;
+    // }
+
+    .small-banners {
+        display: none;
+    }
+    .cat{
+        display: none !important;
+    }
+    .s-cat{
+        display: flex !important;
+    }
+   
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cat-icon {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        width: 30px;
+        height: 30px;
+        font-weight: 500;
+    }
+
+    .cat-icon i {
+        font-size: 2rem !important;
+    }
+
+    .cat-label {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width:479px) {
+    .cat-icon {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .cat-icon i {
+        font-size: 2rem !important;
+    }
+
+    .cat-label {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+
+}
+
+@media only screen and (max-width:425px) {
+    // .carousel-inner-home {
+    //     height: 180px !important;
+    // }
+
+}
+
+@media only screen and (max-width:400px) {
+    // .carousel-inner-home {
+    //     height: 160px !important;
+    // }
+
+    .cat-icon {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .cat-icon i {
+        font-size: 1.9rem !important;
+    }
+
+    .cat-label {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+
+    .small {
+        display: none !important;
+    }
+
+}
+
+
+// ==========================================Hero Section End====================================
+// Pagination=======================
+.pagination{
+    width: fit-content !important;
+  }
+  .page-item{
+      margin: 0px 2px;
+      text-align: center;
+      border: none !important;
+      box-shadow: none !important;
+  }
+  .page-item .active{
+    font-size: 1.7rem;
+    background-color: $blue !important;
+    color: white;
+    width: 28px;
+  }
+  .pagination-nav{
+    width: fit-content !important;
+  
+  }
+  .page-link{
+    font-size: 1.7rem;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    width: 27px;
+    margin: 0px 7px;
+  }
+  .page-link1{
+    font-size: 1.8rem;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent!important;
+    text-decoration: none;
+    color: $blue;
+  }
+  .page-link3{
+    font-size: 1.6rem;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent!important;
+    text-decoration: none;
+    color: $blue;
+    margin: 0px 7px;
+  }

@@ -1,0 +1,260 @@
+// Fixed sidebar
+
+.fixed-nav{
+    // position: fixed;
+    // top:110px;
+    // overflow-y: scroll;
+    // max-height: 100vh;
+    padding-bottom: 105px;
+    @media only screen and (max-width: 767px){
+     position: relative;
+     top: 1rem;
+     padding-bottom: 0px;
+    
+   }
+  }
+.sm-padding{
+    @media only screen and (max-width: 991px){
+        padding: 0px 5px;
+    }
+    @media only screen and (max-width: 767px){
+        padding: 0px 0px;
+    }
+}
+// collapseable divs
+.collapsible__div {
+    color: $black;
+    cursor: pointer;
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent !important;
+    font-weight: 500;
+    border-top: 1px solid rgb(228, 226, 226);
+    line-height: 20px;
+
+}
+
+.collapsible__div:after {
+    content: '\002B';
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active__div:after {
+    content: "\2212";
+}
+
+.content__div {
+    padding: 0px 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent;
+}
+
+button:focus {
+    outline: none !important;
+    outline: none !important;
+}
+
+
+
+
+
+
+// collapse div options
+.options {
+    position: relative;
+    padding-left: 0px
+}
+// .radio label,
+// .checkbox label {
+//     display: block;
+//     font-size: 1.3rem;
+//     cursor: pointer;
+//     margin: 0
+// }
+
+.options input {
+    opacity: 0
+}
+
+label {
+    cursor: pointer
+}
+.tick {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0
+}
+
+.tick input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.check {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #f8f8f8;
+    border: 1px solid transparent;
+    border-radius: 3px
+}
+
+.tick:hover input~.check {
+    background-color: #f3f3f3
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.tick input:checked~.check:after {
+    display: block;
+    transform: rotate(45deg) scale(1)
+}
+
+.tick .check:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) scale(2)
+}
+
+
+.brand .check {
+    background-color: #fff;
+    top: 1px;
+    border: 1px solid #ccc;
+}
+
+.brand .tick {
+    font-size: 1.5rem;
+    padding-left: 27px;
+    display: block;
+    padding-bottom: 10px;
+
+}
+
+
+.brand .tick:hover input~.check,
+.rating .tick:hover input~.check {
+    background-color: #f9f9f9
+}
+
+.brand .tick input:checked~.check,
+.rating .tick input:checked~.check {
+    background-color: $blue
+}
+
+.check-input .tick input:checked~.badge {
+    background-color: $blue !important;
+}
+
+
+// Results numbers=======================================
+.results-number{
+    position: fixed;
+    font-size: 14px;
+    font-weight: 600;
+    color: $blue;
+    top: 88px;
+    width: 15%;
+
+    z-index: 100;
+    @media only screen and (max-width: 1270px){
+        width: 16%;
+    }
+    @media only screen and (max-width: 1080px){
+        width: 18%;
+    }
+    @media only screen and (max-width: 991px){
+        width: 22% ;
+    }
+    @media only screen and (max-width: 800px){
+        width: 23.5% ;
+    }
+    @media only screen and (max-width: 767px){
+        top: 0px;
+        width: 200px;
+        padding: 5px 0px;
+        background-color: white;
+        // box-shadow: 0 0  10px #cccc;
+        // box-shadow: 0 4px 4px -2px gray;
+
+    }
+   
+}
+//icon bar =================================================
+.icon-bar {
+    border: 1px solid #fff;
+    margin: 2px;
+    display: block;
+    width: 20px;
+}
+#selected{
+    font-size: 13px;
+    color: rgb(161, 161, 161) !important;
+    font-weight: 500;
+    max-height: 0px;
+    min-height: 0px;
+    height: 0px !important;
+    margin: 0px !important;
+}
+// style sidebar scroller======================
+.fixed-nav::-webkit-scrollbar {
+    width: .9rem;
+    
+}
+ 
+.fixed-nav::-webkit-scrollbar-track {
+  background-color: transparent;
+  
+}
+ 
+.fixed-nav::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  border-radius: 5px;
+
+}
+// range slider=================================
+.range-label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.range-btn{
+    background-color:transparent !important;
+    border: none !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.price-range-field{
+    font-size: 1.5rem;
+    padding: 2px 3px !important;
+    width: 90px !important;
+}
+.price-range-field:hover,
+.price-range-field:active{
+    box-shadow: none !important;
+     outline: none !important;
+     border: 1px solid black;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
+    background: #f4f4f4;
+    padding-top: 79px;
+}
+
+.white-bg {
+    background-color: #fff !important;
+}
+
+.neg-margin {
+    margin-top: -5px;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        padding-top: 73px;
+        // padding-bottom: 57px;
+    }
+}
