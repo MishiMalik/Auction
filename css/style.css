@@ -1367,7 +1367,7 @@ card
     .sign-body {
       justify-content: flex-start;
       align-self: flex-start;
-      padding-top: 50px !important; } }
+      padding-top: 10px !important; } }
 
 .navbar-brand-sign {
   height: 70px;
