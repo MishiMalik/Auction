@@ -33,7 +33,9 @@
 .navbar-brand-sign img{
     height: 50px;
     width: auto;
-   
+    @media only screen and (max-width: 479px) {
+       margin-top: 10px !important;
+   }
 }
 
 .sign-heading-small h4{

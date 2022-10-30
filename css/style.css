@@ -1411,6 +1411,9 @@ card
 .navbar-brand-sign img {
   height: 50px;
   width: auto; }
+  @media only screen and (max-width: 479px) {
+    .navbar-brand-sign img {
+      margin-top: 10px !important; } }
 
 .sign-heading-small h4 {
   display: none;
