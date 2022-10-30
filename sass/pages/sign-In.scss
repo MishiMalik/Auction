@@ -835,3 +835,9 @@ color: $blue;
     height: 130px;
     width: auto;
 }
+.logo-div{
+    @media only screen and (max-width: 479px) {
+        justify-content: center !important;
+   }
+    
+}

@@ -2075,3 +2075,7 @@ card
 .online-aucation-img {
   height: 130px;
   width: auto; }
+
+@media only screen and (max-width: 479px) {
+  .logo-div {
+    justify-content: center !important; } }
