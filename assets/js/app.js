@@ -1,4 +1,14 @@
-
+// appear search bar on small screen
+$('.search-btn').on('click',function(){
+    $('.nav-input input').css('display','block');
+    $('.cross').css('display','block');
+    
+})
+$('.cross').on('click',function(){
+    $('.nav-input input').css('display','none');
+    $(this).css('display','none');
+    
+})
 // Side-Bar//Filter Bar
 function openNav() {
     document.getElementById("mySidenav").style.width = "240px";

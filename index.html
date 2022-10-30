@@ -38,53 +38,87 @@
         <header class="header fixed-top market-header">
             <div class="container  header-contain  "  >
                 <nav class="navbar navbar-expand-md navbar-light ">
-                    <div class="container-fluid small-cont px-0 ">
-                        <a class="navbar-brand" href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class=""></a>
+                    <div class="container-fluid d-flex  justify-content-between w-100">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class=""></a>
         
                         <form class="d-flex nav-input small-nav-input order2">
-                            <input class="form-control me-2" type="search" placeholder="Search product or sku ..." id="input1"
+                            <input class="form-control me-2" type="search" placeholder="Search product ..." id="input1"
                                 aria-label="Search product or sku ...">
+                                <div class="cross">
+                                    <i class="bi bi-x-circle mt-5"></i>
+                                </div>
                             <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                             </div>
                         </form>
         
                         <div class="destop-header-menu">
-                            <ul class="navbar-nav mb-lg-0 sidenav-content">
+                            <ul class="navbar-nav mb-lg-0 ">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">About</a>
+                                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sign-in.html">Sign In</i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="dropdown">
-                                    
-                                        <a class="btn nav-link nav-link-icon flex-column d-flex align-items-center justify-content-between" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fas fa-globe"></i>
-                                        </a>
-                                      
-                                        <ul class="dropdown-menu pe-3" aria-labelledby="dropdownMenuLink">
-                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
-                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
-                                          <li><a class="dropdown-item cat-label" href="#">Category</a></li>
-                                        </ul>
-                                      </div>
-                                                                 
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-link-icon" href="">
-                                        <i class="fas fa-heart heart"></i>
-                                        <i class="fas fa-user"></i>
+                              
+                                <!-- when user is not registerd -->
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link nav-link-icon w-100 " href="">
+                                        <div class="px-2 blue-text">Sign In</div>
+                                
                                     </a>                               
+                                </li> -->
+                                <li class="nav-item">
+                                   
+                                    <div class="sec-center ms-4 profile-drop-desktop"> 	
+                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                                        <label class="for-dropdown nav-dropdown" for="dropdown">
+                                            <a class="nav-link nav-link-icon">
+                                                <i class="fas fa-heart heart"></i>
+                                                <i class="fas fa-user"></i>
+                                                <i class="fal fa-angle-down"></i>
+                                            </a>
+                                           
+                                        </label>
+                                        <div class="section-dropdown"> 
+                                            <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label> -->
+                                            <!-- <div class="section-dropdown-sub"> 
+                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                            </div> -->
+                                            <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                            <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                        </div>
+                                    </div>                              
                                 </li>
                             </ul>
                         </div>
 
-                        <button class="openHeadbtn" onclick="openHeadNav()">&#9776; </button>
+                        <div class="small-icons">
+                            <div class="d-flex align-items-center">
+                                <div class="search-btn">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                            <div class="sec-center me-4 pe-1 profile-drop-mobile "> 	
+                                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                                <label class="for-dropdown nav-dropdown" for="dropdown">
+                                    <a class="nav-link nav-link-icon">
+                                        <i class="fas fa-heart heart"></i>
+                                        <i class="fas fa-user"></i>
+                                        <i class="fal fa-angle-down"></i>
+                                    </a>
+                                   
+                                </label>
+                                <div class="section-dropdown"> 
+                                    <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                    <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                </div>
+                            </div> 
+                            <button class="openHeadbtn " onclick="openHeadNav()">&#9776; </button>
+                            </div>
                             
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -94,7 +128,7 @@
             <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
             <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
                 <li class=" px-auto">
-                 <a href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class="head-side-logo img-fluid"></a>
+                 <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class="head-side-logo img-fluid"></a>
                 </li>
                 <li class=" d-flex align-items-center justify-content-start w-100">
                    
@@ -206,15 +240,7 @@
                         <!-- =========================================================================================== -->
                         <div class="col-xl-12 col-md-12 col-12">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide-to="0" class="active" aria-current="true"
-                                        aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators"
-                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
+                               
                                 <div class="carousel-inner carousel-inner-home">
                                     <div class="carousel-item active carousel-item-home">
                                         <img src="assets/img/categories.png" class="d-block w-100" alt="...">
@@ -229,16 +255,7 @@
                                             class="d-block w-100" alt="...">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                              
 
                                 <div class="aucation-text-div">
                                     <div><h1 class="aucation-heading ">Aucation</h1></div>
@@ -365,7 +382,7 @@
                     <!-- =========================================================================================== -->
                     <!--========================= Filter Side bar section===================== -->
                     <!-- =========================================================================================== -->
-                    <div class="col-lg-3  pt-5">
+                    <div class="col-lg-3 ">
                         <div class="d-flex justify-content-between" onclick="openNav()">
                             <div class="second-heading small-heading d-none mx-4">Available Products</div>
                             <span class="filter-icon mx-4">
@@ -397,470 +414,477 @@
                             <div class="sidenav-content">
                                 <!-- <div class="results-number d-flex justify-content-between">28 Results <span>Clear All</span>
                                 </div> -->
-                                <div class="collapse__section d-flex  flex-column ">
-                                    <button class="collapsible__div ">Price range
-                                        <small id="selected"></small>
-                                    </button>
-                                    <!-- Price range -->
-                                    <div class="content__div" aria-labelledby="filterhead5" data-parent="#filters">
-                                        <div class=" px-0 ">
-                                            <div class="">
-                                                <div class="price-range">
-                                                    <!-- <div id="slider-range" class="price-filter-range" name="rangeInput">
-                                            </div> -->
-    
-                                                    <div class="d-flex  align-items-center">
-                                                        <div>
-                                                            <label for="" class="range-label">Min<span>(3500)</span></label>
-                                                            <input type="number" min=0 max="3500"
-                                                                oninput="validity.valid||(value='0');" id="min_price"
-                                                                class="price-range-field form-control" />
+
+                                <div class="filter-header">
+                                    <p class="mb-0 pb-0 f-18 text-white w-600">Filter</p>
+                                </div>
+                                <div class="filter-items">
+                                    <div class="collapse__section d-flex  flex-column ">
+                                        <button class="collapsible__div ">Price range
+                                            <small id="selected"></small>
+                                        </button>
+                                        <!-- Price range -->
+                                        <div class="content__div" aria-labelledby="filterhead5" data-parent="#filters">
+                                            <div class=" px-0 ">
+                                                <div class="">
+                                                    <div class="price-range">
+                                                        <!-- <div id="slider-range" class="price-filter-range" name="rangeInput">
+                                                </div> -->
+        
+                                                        <div class="d-flex  align-items-center">
+                                                            <div>
+                                                                <label for="" class="range-label">Min<span>(3500)</span></label>
+                                                                <input type="number" min=0 max="3500"
+                                                                    oninput="validity.valid||(value='0');" id="min_price"
+                                                                    class="price-range-field form-control" />
+                                                            </div>
+                                                            <div class="space border-top mx-2 w-25 mt-4 position-relative ">
+                                                            </div>
+                                                            <div>
+                                                                <label for=""
+                                                                    class="range-label">Max<span>(223300)</span></label>
+                                                                <input type="number" min=0 max="22233300"
+                                                                    oninput="validity.valid||(value='10000');" id="max_price"
+                                                                    class="price-range-field form-control" />
+                                                            </div>
                                                         </div>
-                                                        <div class="space border-top mx-2 w-25 mt-4 position-relative ">
+        
+                                                        <div class="d-flex justify-content-between mb-2 mt-4">
+                                                            <button class=" range-btn ">Cancel</button>
+                                                            <button class=" range-btn  ">Apply</button>
                                                         </div>
-                                                        <div>
-                                                            <label for=""
-                                                                class="range-label">Max<span>(223300)</span></label>
-                                                            <input type="number" min=0 max="22233300"
-                                                                oninput="validity.valid||(value='10000');" id="max_price"
-                                                                class="price-range-field form-control" />
-                                                        </div>
-                                                    </div>
-    
-                                                    <div class="d-flex justify-content-between mb-2 mt-4">
-                                                        <button class=" range-btn ">Cancel</button>
-                                                        <button class=" range-btn  ">Apply</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+        
+                                    </div>   
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div">Categories<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div" id="abc">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications
+                                                        <input type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-    
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div">Categories<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div" id="abc">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications
-                                                    <input type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Product type<small id="selected">
+        
+                                            </small></button>
+        
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications
+                                                        <input type="checkbox" class="checked" value="1" name="fooby[1][]">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics
+                                                        <input type="checkbox" class="checked" value="1" name="fooby[1][]">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check" value="1" name="fooby[1][]"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Product type<small id="selected">
-    
-                                        </small></button>
-    
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications
-                                                    <input type="checkbox" class="checked" value="1" name="fooby[1][]">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics
-                                                    <input type="checkbox" class="checked" value="1" name="fooby[1][]">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check" value="1" name="fooby[1][]"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div">Categories<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div" id="abc">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div">Categories<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div" id="abc">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Sub-Categories<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Sub-Categories<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Condition<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Condition<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">State<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">State <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">State<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">State <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Country<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">City<input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Country<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">City<input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Categories<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Featured
+                                                        Brans<input type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Categories<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Featured
-                                                    Brans<input type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Sub-Categories<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Sub-Categories<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Condition<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Condition<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+                                    <div class="collapse__section d-flex  flex-column">
+                                        <button class="collapsible__div ">Condition<small id="selected">
+        
+                                            </small></button>
+                                        <div class="content__div">
+                                            <form class="brand">
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Applications <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Cosmetics <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Furniture <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="form-inline d-flex align-items-center justify-content-between  check-input">
+                                                    <label class="tick d-flex justify-content-between w-100">Clothing <input
+                                                            type="checkbox" class="checked">
+                                                        <span class="check"></span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+        
                                     </div>
-    
-                                </div>
-                                <div class="collapse__section d-flex  flex-column">
-                                    <button class="collapsible__div ">Condition<small id="selected">
-    
-                                        </small></button>
-                                    <div class="content__div">
-                                        <form class="brand">
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Applications <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Cosmetics <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Furniture <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                            <div
-                                                class="form-inline d-flex align-items-center justify-content-between  check-input">
-                                                <label class="tick d-flex justify-content-between w-100">Clothing <input
-                                                        type="checkbox" class="checked">
-                                                    <span class="check"></span>
-                                                </label>
-                                            </div>
-                                        </form>
+        
+                                    <div class="sideBar-btn" id="side-btn">
+                                        <button class="btn side-btn" id="side-btn">Finished</button>
                                     </div>
-    
                                 </div>
-    
-                                <div class="sideBar-btn" id="side-btn">
-                                    <button class="btn side-btn" id="side-btn">Finished</button>
-                                </div>
+                                
+                               
                             </div>
     
                         </div>
@@ -869,6 +893,9 @@
                     <!-- ======================================Main Part /Cards==================================== -->
                     <!-- =========================================================================================== -->
                     <div class="col-lg-9 col-12  all-products" id="main2">
+                        <div class="filter-header mb-3">
+                            <p class="mb-0 pb-0 f-18 text-white w-600">Products</p>
+                        </div>
                         <div class=" row  ">
                            <div class="col-lg-4 col-md-6 mb-4">
                             <div class="card">
@@ -1060,9 +1087,7 @@
                                         <a class="page-link3" href="#" aria-label="Previous"><i
                                                 class="fas fa-arrow-left "></i></a>
                                     </li>
-                                    <li class="page-item disabled me-3">
-                                        <span class="page-link1 ">Prev</span>
-                                    </li>
+                                   
     
                                     <li class="page-item  "><a class="page-link px-3 " href="#">1</a></li>
                                     <li class="page-item " aria-current="page">
@@ -1076,9 +1101,7 @@
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
     
-                                    <li class="page-item  ms-3">
-                                        <a class="page-link1" href="#">Next</a>
-                                    </li>
+                                   
                                     <li class="page-item">
                                         <a class="page-link3" href="#" aria-label="Previous"><i
                                                 class="fas fa-arrow-right "></i></a>
@@ -1327,11 +1350,11 @@
     <!-- Footer -->
     <footer class="text-white desktop-footer mt-5">
         <div class="container">
-            <div class="row d-flex justify-content-between align-items-start py-4">
+            <div class="row d-flex justify-content-between align-items-start py-4 mb-0">
                 <div class="col-lg-4 col-md-4 col-12 ">
                     <div class="d-flex justify-content-center ">
                         <div class="f-logo-div">
-                            <a href="index.html"><img src="assets/img/WhatsApp Image 2022-10-04 at 11.48.20 AM.jpeg" alt="" class="img-fluid mb-2"></a>
+                            <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" height="100px" class="img-fluid mb-2"></a>
                         </div>
                     </div>
                     <div class="mb-2 d-flex justify-content-center align-items-center">
@@ -1379,7 +1402,7 @@
                         
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4 mb-md-0 d-flex justify-content-center">
+                <div class="col-lg-4 col-md-4 col-12  mb-4 mb-md-0 d-flex justify-content-center">
                     <div class="f-contact-heading ">
                         Kindly Contact Us via:<br>
                         <span>youremail@gmail.com</span>
@@ -1388,8 +1411,8 @@
             </div>
         </div>
         <!-- Copyright -->
-        <div class="text-center p-3 copy-right-text" style="background-color: rgba(0, 0, 0, 0.2);">
-            Copyright © zogsales 2021.All rights reserved
+        <div class="text-center p-3 copy-right-text" style="background-color: rgba(0, 0, 0, 0.90);">
+            Copyright © bidblock 2022. All rights reserved
         </div>
         <!-- Copyright -->
     </footer>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- style sheet -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- owl carousel -->
+    <script type="text/javascript" src="assets/Owl-carousel/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <title>BidBlock-Home</title>
+</head>
+<body class="account-body bg-white" id="account-body">
+    <div class="allButFooter mb-4">
+
+        <!-- ====================Header part==================== -->
+        <header class="header fixed-top market-header">
+            <div class="container  header-contain  "  >
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="container-fluid d-flex  justify-content-between w-100">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class=""></a>
+        
+                        <form class="d-flex nav-input small-nav-input order2">
+                            <input class="form-control me-2" type="search" placeholder="Search product ..." id="input1"
+                                aria-label="Search product or sku ...">
+                                <div class="cross">
+                                    <i class="bi bi-x-circle mt-5"></i>
+                                </div>
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            </div>
+                        </form>
+        
+                        <div class="destop-header-menu">
+                            <ul class="navbar-nav mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Contact</a>
+                                </li>
+                              
+                                <!-- when user is not registerd -->
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link nav-link-icon w-100 " href="">
+                                        <div class="px-2 blue-text">Sign In</div>
+                                
+                                    </a>                               
+                                </li> -->
+                                <li class="nav-item">
+                                   
+                                    <div class="sec-center ms-4 profile-drop-desktop"> 	
+                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                                        <label class="for-dropdown nav-dropdown" for="dropdown">
+                                            <a class="nav-link nav-link-icon">
+                                                <i class="fas fa-heart heart"></i>
+                                                <i class="fas fa-user"></i>
+                                                <i class="fal fa-angle-down"></i>
+                                            </a>
+                                           
+                                        </label>
+                                        <div class="section-dropdown"> 
+                                            <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label> -->
+                                            <!-- <div class="section-dropdown-sub"> 
+                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                            </div> -->
+                                            <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                            <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                        </div>
+                                    </div>                              
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="small-icons">
+                            <div class="d-flex align-items-center">
+                                <div class="search-btn">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                            <div class="sec-center me-4 pe-1 profile-drop-mobile "> 	
+                                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                                <label class="for-dropdown nav-dropdown" for="dropdown">
+                                    <a class="nav-link nav-link-icon">
+                                        <i class="fas fa-heart heart"></i>
+                                        <i class="fas fa-user"></i>
+                                        <i class="fal fa-angle-down"></i>
+                                    </a>
+                                   
+                                </label>
+                                <div class="section-dropdown"> 
+                                    <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                    <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                </div>
+                            </div> 
+                            <button class="openHeadbtn " onclick="openHeadNav()">&#9776; </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- =====================small header sidebar============= -->
+        <div class="headsidebar pt-5"   id="HeadSidebar">
+            <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
+            <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
+                <li class=" px-auto">
+                 <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class="head-side-logo img-fluid"></a>
+                </li>
+                <li class=" d-flex align-items-center justify-content-start w-100">
+                   
+                    <a class="nav-link active ms-4" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="">About Us</a>
+                </li>
+                <li class="  d-flex align-items-center justify-content-start w-100">
+                    <!-- <div class="head-side-icon">
+                        <i class="fas fa-user-alt"></i>
+                    </div> -->
+                    <a class="nav-link ms-4" href="">Contact</i></a>
+                </li>
+   
+                <li class=" d-flex  w-100 ">
+                    <a class="nav-link ms-4" href="">Privacy Policy</i></a>
+                </li>
+               
+                <li class="mt-auto  d-flex align-items-center justify-content-center ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                    <a class="nav-link  mx-2 side-sign-btn" href="">Sign In</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- =======================================main part start============ -->
+        <main class="mainPart" id="main">
+          <div class="container">
+            
+            <div class="row  d-flex justify-content-center">
+                <div class="col-lg-9 col-md-10 account-main-col">
+                    <div class="shadow-bg my-5">
+                        <a class="mb-0 pb-0 f-16 w-600 blue-text" href="index.html">Home&nbsp;&nbsp;>>&nbsp;&nbsp;Contact</a>
+                    </div>
+
+                    <div class="mt-1">
+                        <h1 class="f-30 w-600">Contact</h1>
+                        <p class="f-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos ipsa debitis neque error ipsum pariatur deserunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, explicabo!</p>
+                        <div class="row">
+                            <div class="col-lg-9 address-form">
+                               <form action="" class="row">
+                                <div class="col-lg-6">
+                                    <div class="sign__field ">
+                                        <input type="text" name="fullname1" id="fullname2" placeholder="Jane Appleseed"
+                                            class="sign__field-input ">
+                                        <label for="fullname1" class="sign__field-label">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="sign__field ">
+                                        <input type="text" name="fullname1" id="fullname2" placeholder="Jane Appleseed"
+                                            class="sign__field-input ">
+                                        <label for="fullname1" class="sign__field-label">Second Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3 mt-4">
+                                        <label for="exampleFormControlTextarea1" class="form-label f-14 w-500">Message</label>
+                                        <textarea class="form-control f-14" id="exampleFormControlTextarea1" rows="5" placeholder="Type Text here..."></textarea>
+                                      </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="sign__btn w-100 my-4 mt-2 mx-auto">
+                                        <button type="submit" id="submit-btn"><a href="sign-in.html "
+                                                class="sign-in">Send</a></button>
+                                    </div>
+                                </div>
+                               </form>
+                            </div>
+                            <div class="col-lg-3 address-detail">
+                                <div>
+                                    <h1 class="f-16 w-500 mb-2">ADDRESS</h1>
+                                    <div class="d-flex justify-content-start">
+                                        <i class="bi bi-geo-alt-fill f-18 blue-text me-3"></i>
+                                        <p class="mb-0 pb-0 f-14 w-400">2130 Fulton Street, Chicago, IL
+                                            94117-1080 USA</p>
+                                    </div>
+                                </div>
+                                <div class="seprate my-4"></div>
+                                <div>
+                                    <h1 class="f-16 w-500 mb-2">PHONE</h1>
+                                    <div class="d-flex justify-content-start">
+                                        <i class="bi bi-telephone-fill f-18 blue-text me-3"></i>
+                                        <p class="mb-0 pb-0 f-14 w-400">1-800-3434-876</p>
+                                    </div>
+                                </div>
+                                <div class="seprate my-4"></div>
+                                <div>
+                                    <h1 class="f-16 w-500 mb-2">E-Mail</h1>
+                                    <div class="d-flex justify-content-start">
+                                        <i class="bi bi-envelope-fill f-18 blue-text me-3"></i>
+                                        <p class="mb-0 pb-0 f-14 w-400">mail@demolink.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 pt-5">
+                        <div class="row">
+                            <div class="col-lg-12 mx-auto">
+                                <h1 class="f-30 w-600">Contact</h1>
+                        <p class="f-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, explicabo!</p>
+                        
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Accordion Item #1
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body f-14">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body  f-14">
+                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body  f-14">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </main>
+    </div>
+   
+    <!-- =========================================================================================== -->
+    <!--========================= BackDrawer section===================== -->
+    <!-- =========================================================================================== -->
+    <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeHeadNav()">
+
+    </div>
+    <div class="backdrop" id="backdrop2" href="javascript:void(0)" onclick="closeHeadNav()">
+
+    </div>
+
+
+
+    <!-- =========================================================================================== -->
+    <!--========================= Desktop Footer===================== -->
+    <!-- =========================================================================================== -->
+    <!-- Footer -->
+    <footer class="text-white desktop-footer mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-start py-4 mb-0">
+                <div class="col-lg-4 col-md-4 col-12 ">
+                    <div class="d-flex justify-content-center ">
+                        <div class="f-logo-div">
+                            <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" height="100px" class="img-fluid mb-2"></a>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex justify-content-center align-items-center">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Ticktok -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"> <img
+                                src="assets/img/pngaaa.com-4768645.png" alt="" class="img-fluid p-1">
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 mb-4 mb-md-0 d-flex justify-content-center">
+                    <ul class="list-unstyled mb-0 text-start">
+                        <li class="f-links">
+                            <a href="index.html" class="text-white">Home</a>
+                        </li>
+                        <li class="f-links">
+                            <a href="about-us.html" class="text-white">About Us</a>
+                        </li>
+
+                        <li class="f-links">
+                            <a href="#!" class="text-white">Privacy Policy</a>
+                        </li>
+
+                        <li class="f-links">
+                            <a href="contact.html" class="text-white">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12  mb-4 mb-md-0 d-flex justify-content-center">
+                    <div class="f-contact-heading ">
+                        Kindly Contact Us via:<br>
+                        <span>youremail@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 copy-right-text" style="background-color: rgba(0, 0, 0, 0.90);">
+            Copyright © bidblock 2022. All rights reserved
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/Add Tags Input Box JavaScript/script.js"></script> -->
+
+           
+</body>
+
+</html>

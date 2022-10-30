@@ -1,5 +1,5 @@
 .desktop-footer{
-    height: 225px !important;
+    padding-top: 30px;
     background-color: $blue;
     @media only screen and (max-width: 767px) {
         height: 100% !important;
@@ -30,8 +30,8 @@
         padding: 3px 7px;
         border-radius: 5px;
         img{
-            height: 47px;
-             width: 23rem;
+            height: 70px;
+             width: auto;
         }
     }
     .f-links{
@@ -54,4 +54,10 @@
     .copy-right-text{
         font-size: 1.3rem;
     }
+}
+.allButFooter {
+    min-height: calc(100vh - 287px);
+}
+.allButFooter2{
+    min-height: calc(100vh - 43px);
 }

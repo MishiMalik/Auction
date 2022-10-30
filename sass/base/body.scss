@@ -23,7 +23,12 @@ body {
 .neg-margin {
     margin-top: -5px;
 }
-
+.shadow-bg{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #ccc;
+    padding: 7px 18px !important;
+    border-radius: 6px;
+}
 @media only screen and (max-width: 767px) {
     body {
         padding-top: 73px;
