@@ -15,12 +15,12 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 991px) {
           justify-content: flex-start;
           align-self:flex-start;
-          padding-top: 10px !important;
-          
+          height: 100%;
     }
+    
 }
 // .sign2-body{
 //     padding: 0px !important;
@@ -30,10 +30,9 @@
 //     justify-content: center;
 //     align-self: center;
 // }
-.navbar-brand-sign {
-    height: 70px;
+.navbar-brand-sign img{
+    height: 50px;
     width: auto;
-    padding-top: 10px;
    
 }
 
@@ -185,70 +184,70 @@
     }
 }
 
-// .sign__btn-small{
-//     // display: none !important;
-//     display: flex;
-//     justify-content: center;
-//     @media only screen and (max-width: 767px) {
-//         display: block  !important;
-//     }
-//     button{
-//         width: 100% !important;
-//         background-color: transparent !important;
-//         border: none !important;
-//         a{
-//         text-decoration: none !important;
-//         font-size: 1.5rem !important;
-//         font-weight: 600 !important;
-//         padding: 6px 20px !important;
-//         border: none !important;
-//         border-radius: 3px ;
-//         background-color: white !important;
-//         color: $blue !important;
-//         border: 2px solid $blue !important;
-//         width: 100% !important;
-//         flex-wrap: 1;
-//         display: flex;
-//         justify-content: center;
-//         @media only screen and (max-width: 767px) {
-//             // display: block  !important;
-//             width: 100% !important;
-//             padding: 8px 20px !important ;
-//             border-radius: 4px ;
-//             font-weight: 600 !important;
-//             font-size: 1.5rem !important;
-//         }
-//         @media only screen and (max-width: 479px) {
-//             font-size: 1.6rem !important;
-//         }
-//         &:hover{
-//             color: white !important;
-//             background-color: $blue !important;
-//         }
-//         }
+.sign__btn-small{
+    // display: none !important;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 767px) {
+        display: block  !important;
+    }
+    button{
+        width: 100% !important;
+        background-color: transparent !important;
+        border: none !important;
+        a{
+        text-decoration: none !important;
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+        padding: 6px 20px !important;
+        border: none !important;
+        border-radius: 3px ;
+        background-color: white !important;
+        color: $blue !important;
+        border: 2px solid $blue !important;
+        width: 100% !important;
+        flex-wrap: 1;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 767px) {
+            // display: block  !important;
+            width: 100% !important;
+            padding: 8px 20px !important ;
+            border-radius: 4px ;
+            font-weight: 600 !important;
+            font-size: 1.5rem !important;
+        }
+        @media only screen and (max-width: 479px) {
+            font-size: 1.6rem !important;
+        }
+        &:hover{
+            color: white !important;
+            background-color: $blue !important;
+        }
+        }
        
-//     }
-// }
-// .ask-account{
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-self: center;
-//     @media only screen and (max-width: 767px) {
-//         display: none;
-//     }
-//     p{
-//         padding-top: 10px;
-//         font-size: 1.5rem;
-//         a{
-//             font-weight: 600;
-//             color: $blue;
-//             text-decoration: none;
-//         }
-//     }
+    }
+}
+.ask-account{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+    p{
+        padding-top: 10px;
+        font-size: 1.5rem;
+        a{
+            font-weight: 600;
+            color: $blue;
+            text-decoration: none;
+        }
+    }
 
-// }
+}
 .ask-account{
     display: block !important;
     text-align: center;
@@ -310,10 +309,10 @@
             font-size: 15px;
             padding: 8px 10px;
         }
-        @media only screen and (max-width: 479px) {
-            font-size: 16px;
-            padding: 11px 10px;
-        }
+        // @media only screen and (max-width: 479px) {
+        //     font-size: 16px;
+        //     padding: 11px 10px;
+        // }
   }
   
   
@@ -351,9 +350,9 @@
     @media only screen and (max-width: 767px) {
         transform: translate(10px, 3.005rem) scale(1.5);
     }
-    @media only screen and (max-width: 479px) {
-        transform: translate(10px, 3.955rem) scale(1.5);
-    }
+    // @media only screen and (max-width: 479px) {
+    //     transform: translate(10px, 3.955rem) scale(1.5);
+    // }
   }
   /**
   * By default, the placeholder should be transparent. Also, it should 
@@ -809,3 +808,30 @@ color: $blue;
 
 
 
+// =========================================sign
+.sign-col-right{
+    background-color: $blue;
+    padding: 20px 50px;
+    @media only screen and (max-width:991px)
+    {
+        padding: 20px 10px;
+    }
+}
+.form-row{
+    // height: 80vh;
+   border: 1px solid #ccc
+}
+.sign-col-left {
+    padding: 10px !important;
+   
+}
+.form-fields{
+    padding: 10px 50px;
+    @media only screen and (max-width: 479px) {
+        padding:10px 0px !important;
+   }
+}
+.online-aucation-img{
+    height: 130px;
+    width: auto;
+}

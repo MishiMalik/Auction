@@ -2,3 +2,45 @@
 $black:#00161c;
 $blue:#4B3591;
 $red:#EA4335;
+// font sizes
+.f-35{
+    font-size: 35px;
+    @media only screen and (max-width: 479px) {
+       font-size: 25px;
+    }
+}
+.f-28{
+    font-size: 28px;
+}
+.f-24{
+    font-size: 24px;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-18{
+    font-size: 18px;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-12{
+    font-size: 12px;
+}
+
+// font weight
+.w-400{
+    font-weight: 400;
+}
+.w-500{
+    font-weight: 500;
+}
+.w-600{
+    font-weight: 600;
+}
+.w-700{
+    font-weight: 700;
+}
