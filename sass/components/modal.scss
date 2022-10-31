@@ -1,0 +1,280 @@
+.modal-dialog{
+    max-width:660px !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto !important;
+    
+    @media only screen and (max-width: 767px){
+        max-width:100% !important;
+        justify-content: center;
+        align-items:center;   
+        height: 90vh;
+    }
+}
+.modal-dialog2{
+    max-width:350px !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto !important;
+    padding: 5px 10px !important;
+  
+    
+    @media only screen and (max-width: 767px){
+        max-width:100% !important;
+        justify-content: center;
+        align-items:center;   
+        height: 90vh;
+    }
+}
+.modal-dialog3{
+    max-width:400px !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto !important;
+    padding: 5px 10px !important;
+  
+    
+    @media only screen and (max-width: 767px){
+        max-width:100% !important;
+        justify-content: center;
+        align-items:center;   
+        height: 90vh;
+    }
+}
+.modal-content{
+    // background-color: #ffffff;
+    border-radius: 7px;
+    @media only screen and (max-width: 767px){
+        max-width:90%; 
+    }
+}
+.quick{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &-close2{
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        color:  $blue !important;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        background-color:transparent;
+        fill:  $blue;
+    }
+    
+    &-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color:  $blue !important;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        background-color:transparent;
+        fill:  $blue;
+    }
+    &__vector{
+        img{
+            height: 130px;
+            width: 130px;
+            margin:14px 0px 16px 0px;
+            object-fit: cover;
+        }
+    }
+    &__vector2{
+        height: 150px;
+        width:80%;
+        margin-bottom: 10px !important;
+        img{
+            height: 100%;
+            width: 100%;
+            margin:18px 0px 18px 0px;
+            object-fit: contain;
+        }
+    }
+    &__heading{
+        font-size: 1.5rem;
+        font-weight: 500;
+        
+    }
+    &__detail{
+        @media only screen and (max-width: 767px){
+            padding: 10px 0px 0px 10px;
+        }
+    }
+    &__img{
+        height: 300px;
+        width: 315px;
+        @media only screen and (max-width: 767px){
+           height: 250px;
+        }
+        img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        object-position: top;
+        }
+    }
+    &__buttons{
+        display: flex;
+        width: 100%;
+    }
+    &__btn{
+        background-color: $blue !important;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 3px 10px;
+        width: 50%;
+        margin: 5px;
+        @media only screen and (max-width: 340px){
+           font-size: 1.4rem;
+        }
+    }
+    &__input{
+        label{
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        input{
+            border: 1px solid #ccc;
+            font-size: 1.4rem;
+            width: 80% !important;
+            border-radius: 5px;
+            &:hover,
+            &:focus,
+            &:active{
+                border: 1px solid $blue;
+            }
+        }
+        select{
+            border: 1px solid #ccc;
+            font-size: 1.4rem;
+            width: 80% !important;
+            border-radius: 5px;
+        }
+    }
+    &__btn-submit{
+        text-align: center !important;
+        padding: 3px 0px;
+        button{
+            background-color: transparent;
+            border: none;
+            padding: 3px 0px;
+            width: 150px !important;
+            
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: $blue;
+                border-radius: 5px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                width: 150px;
+                padding: 3px 0px;
+            }
+        }
+    }
+    &__alert{
+        h3{
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: $blue;
+            @media only screen and (max-width: 480px){
+                font-size: 2rem;
+             }
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 400;
+            @media only screen and (max-width: 480px){
+                font-size: 1.6rem;
+             }
+        }
+    }
+    &__btn-alert {
+      button{
+          background-color: transparent;
+          border: none;
+          a{
+              font-size: 1.4rem;
+              font-weight: 500;
+              background-color: $blue;
+              color: white;
+              text-decoration: none;
+              padding: 7px 7px;
+              border-radius: 4px;
+              width: 100px;
+          
+          }
+      }
+    }
+}
+.edit-offer{
+    label{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    input{
+        border: 1px solid #ccc;
+        font-size: 1.4rem;
+        width: 100% !important;
+        border-radius: 5px;
+        &:hover,
+        &:focus,
+        &:active{
+            border: 1px solid $blue;
+        }
+    }
+    select{
+        border: 1px solid #ccc;
+        font-size: 1.4rem;
+        width: 100% !important;
+        border-radius: 5px;
+    }
+    &--num{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
+.w-65{
+    width: 95% !important;
+    
+     @media only screen and (max-width: 430px){
+        width: 90% !important;
+      }
+      @media only screen and (max-width: 380px){
+        width: 95% !important;
+      }
+}
+.fade{
+    animation: zoom-in 2s ease-out ;
+}
+.fade{
+    animation: fade 1s ease ;
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .accordion-button:not(.collapsed){
+    color: black !important;
+    background-color: transparent !important ;
+    box-shadow: none !important
+  }

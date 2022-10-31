@@ -5,7 +5,10 @@
 @import "components/footer";
 @import "components/filter";
 @import "components/cards";
+@import "components/modal.scss";
 
 @import "pages/home";
 @import "pages/sign-In";
 @import "pages/about";
+@import "pages/product-detail.scss";
+@import "pages/profile.scss";

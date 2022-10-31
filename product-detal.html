@@ -1,0 +1,699 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- style sheet -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- owl carousel -->
+    <script type="text/javascript" src="assets/Owl-carousel/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <title>BidBlock-Home</title>
+</head>
+
+<body class="account-body bg-white" id="account-body">
+    <div class="allButFooter mb-4">
+
+            <!-- ====================Header part==================== -->
+            <header class="header fixed-top market-header">
+                <div class="container  header-contain  "  >
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                        <div class="container-fluid d-flex  justify-content-between w-100">
+                            <a class="navbar-brand" href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class=""></a>
+            
+                            <form class="d-flex nav-input small-nav-input order2">
+                                <input class="form-control me-2" type="search" placeholder="Search product ..." id="input1"
+                                    aria-label="Search product or sku ...">
+                                    <div class="cross">
+                                        <i class="bi bi-x-circle mt-5"></i>
+                                    </div>
+                                <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </div>
+                            </form>
+            
+                            <div class="destop-header-menu">
+                                <ul class="navbar-nav mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                  
+                                    <!-- when user is not registerd -->
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link nav-link-icon w-100 " href="">
+                                            <div class="px-2 blue-text">Sign In</div>
+                                    
+                                        </a>                               
+                                    </li> -->
+                                    <li class="nav-item">
+                                       
+                                        <div class="sec-center ms-4 profile-drop-desktop"> 	
+                                            <input class="dropdown-header" type="checkbox" id="dropdown" name="dropdown"/>
+                                            <label class="for-dropdown nav-dropdown" for="dropdown">
+                                                <a class="nav-link nav-link-icon">
+                                                    <i class="fas fa-heart heart"></i>
+                                                    <i class="fas fa-user"></i>
+                                                    <i class="fal fa-angle-down"></i>
+                                                </a>
+                                               
+                                            </label>
+                                            <div class="section-dropdown"> 
+                                                <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+                                                <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label> -->
+                                                <!-- <div class="section-dropdown-sub"> 
+                                                    <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                                    <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                                </div> -->
+                                                <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                                <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                            </div>
+                                        </div>                              
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="small-icons">
+                                <div class="d-flex align-items-center">
+                                    <div class="search-btn">
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                <div class="sec-center me-4 pe-1 profile-drop-mobile "> 	
+                                    <input class="dropdown-header" type="checkbox" id="dropdown" name="dropdown"/>
+                                    <label class="for-dropdown nav-dropdown" for="dropdown">
+                                        <a class="nav-link nav-link-icon">
+                                            <i class="fas fa-heart heart"></i>
+                                            <i class="fas fa-user"></i>
+                                            <i class="fal fa-angle-down"></i>
+                                        </a>
+                                       
+                                    </label>
+                                    <div class="section-dropdown"> 
+                                        <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
+                                        <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                    </div>
+                                </div> 
+                                <button class="openHeadbtn " onclick="openHeadNav()">&#9776; </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- =====================small header sidebar============= -->
+            <div class="headsidebar pt-5"   id="HeadSidebar">
+                <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
+                <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
+                    <li class=" px-auto">
+                     <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class="head-side-logo img-fluid"></a>
+                    </li>
+                    <li class=" d-flex align-items-center justify-content-start w-100">
+                       
+                        <a class="nav-link active ms-4" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="  d-flex align-items-center justify-content-start w-100">
+                        <!-- <div class="head-side-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div> -->
+                        <a class="nav-link ms-4" href="">About Us</a>
+                    </li>
+                    <li class="  d-flex align-items-center justify-content-start w-100">
+                        <!-- <div class="head-side-icon">
+                            <i class="fas fa-user-alt"></i>
+                        </div> -->
+                        <a class="nav-link ms-4" href="">Contact</i></a>
+                    </li>
+       
+                    <li class=" d-flex  w-100 ">
+                        <a class="nav-link ms-4" href="">Privacy Policy</i></a>
+                    </li>
+                   
+                    <li class="mt-auto  d-flex align-items-center justify-content-center ">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+                        <a class="nav-link  mx-2 side-sign-btn" href="">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+    
+
+    <main >
+        <section>
+            <div class="container">
+                    <div class="row my-5">
+                        <div class="col-lg-12 mx-auto">
+                            <div class="shadow-bg">
+                                <a class="mb-0 pb-0 f-16 w-600 blue-text" href="index.html">Home&nbsp;&nbsp;>>&nbsp;&nbsp;Product Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row hero-row">
+
+                        <div class="col-xlg-5 col-lg-5 col-md-5 col-11 slider-col">
+                            <div class="carousel ">
+                                <input type="radio" name="slides" checked="checked" id="slide-1">
+                                <input type="radio" name="slides" id="slide-2">
+                                <input type="radio" name="slides" id="slide-3">
+                                <ul class="carousel__slides">
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/img/This item is unavailable _ Etsy.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/img/s5.jpg"
+                                                    alt="" class="carousel-product-img">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel__slide">
+                                        <figure>
+                                            <div>
+                                                <img src="assets/img/Indian style.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul class="carousel__thumbnails">
+                                    <li>
+                                        <label for="slide-1"><img
+                                                src="assets/img/This item is unavailable _ Etsy.jpg" alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-2"><img
+                                                src="assets/img/s5.jpg"
+                                                alt=""></label>
+                                    </li>
+                                    <li>
+                                        <label for="slide-3"><img src="assets/img/Indian style.jpg" alt=""></label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- small screen -->
+                            <!-- <div class="small-carousel product-slider-sm">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/img/s5.jpg"
+                                                        alt="" class="img-fluid">
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/img/This item is unavailable _ Etsy.jpg" alt=""
+                                                        class="img-fluid">
+                                                </div>
+                                            </figure>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <figure>
+                                                <div>
+                                                    <img src="assets/img/Indian style.jpg" alt="" class="img-fluid">
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div> -->
+
+
+                        </div>
+
+                        <div class="col-xlg-7 col-lg-7 col-md-7 col-sm-12 product ">
+                            <div class="product__heading line-clamp">
+                                Heading of the product will be here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum beatae accusantium vitae adipisci temporibus?
+                            </div>
+                          
+                            <div class="product__information">
+                                <div class="time d-flex flex-wrap justify-content-start">
+                                    <div class="d-flex f-18">
+                                        <p class="mb-0 pb-0 f-20 blue-text w-600">Time :</p>
+                                    </div>
+                                    <div class="d-flex f-18 ms-2 mt-1">
+                                        <b>1</b>&nbsp;Day&nbsp;&nbsp; <b>20</b>&nbsp;Hours
+                                    </div>
+                                   
+                                     
+                                </div>
+                                <!-- <div class="product__information-text">
+                                    <h3>Condition:</h3>
+                                    <p>New</p>
+                                </div>
+                                <div class="product__information-text">
+                                    <h3>Nationwide Delievry:</h3>
+                                    <p>NO</p>
+                                </div> -->
+                            </div>
+                            <div class="product__description">
+                                <p><span>Description:</span>Lorem, iure nemo saepe, hic autem veniam aliquam tempora
+                                    ipsam necessitatibus modi. Asperiores, praesentium atque!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit asperiores quae neque pariatur odit nobis deleniti, totam est saepe a sed blanditiis perspiciatis! Mollitia delectus ratione voluptates maiores placeat quo rem vitae dolores dolor. Ducimus alias nobis dignissimos animi omnis quibusdam, ut explicabo suscipit sequi fugit ad aperiam repellendus quidem.          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, libero nihil dolor velit facere exercitationem deleniti eum molestiae, dolore accusantium asperiores quae! Quisquam culpa modi deserunt qui, delectus quidem in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus at ea quaerat consequatur rerum magni. Atque officiis ipsa molestias eos voluptas magnam possimus expedita, placeat aliquam sint. Cum tempore dicta eius voluptatibus, illo consectetur sint ex asperiores praesentium ipsum amet vitae magnam aliquid numquam quis accusamus libero maiores harum ipsam! Ipsa aut deleniti deserunt reprehenderit iusto inventore labore facilis.</p>
+                              
+                            </div>
+                            <div class="product__buttons ">
+                                <div class="product__buttons-small">
+                                    <div class="sign__field ">
+                                        <input type="text" name="fullname1" id="fullname2" placeholder="Jane Appleseed"
+                                            class="sign__field-input bid-amount-input ">
+                                        <label for="fullname1" class="sign__field-label">Enter Bid Amount</label>
+                                    </div>
+                                    <button class="product__buttons-small--btn mt-4" 
+                                        data-bs-toggle="modal" data-bs-target="#greateChoice">Bid</button>
+                                </div>   
+                            </div>
+                           
+
+                        </div>
+                       
+                    </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================================== -->
+        <!--========================= Card Slider===================== -->
+        <!-- =========================================================================================== -->
+        <div class="container mt-5 pt-5">
+            <div class="row">
+              <div class="col-lg-12">
+                      <div class="owl-carousel owl-theme ">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/item1.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="card-text">
+                              <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Officiis, minima.</p>
+                              <h1 class="price mb-0 pb-0">$49.00</h1>
+                              <div class="start-price mb-0 pb-0">Start price</div>
+                              <div class="d-flex justify-content-between align-items-center mt-3">
+                                  <a href=""><button class="deatils">Details</button></a>
+                                  <div class="time d-flex flex-wrap justify-content-end">
+                                      <div class="d-flex">
+                                          <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                      </div>
+                                      <div class="d-flex">
+                                          <b>20</b>&nbsp;Hours
+                                      </div>
+                                       
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="heart-icon">
+                              <i class="bi bi-suit-heart-fill"></i>
+                              <!-- <i class="bi bi-suit-heart"></i> -->
+                          </div>
+                      </div>
+  
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/item2.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="card-text">
+                              <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Officiis, minima.</p>
+                              <h1 class="price mb-0 pb-0">$49.00</h1>
+                              <div class="start-price mb-0 pb-0">Start price</div>
+                              <div class="d-flex justify-content-between align-items-center mt-3">
+                                  <a href=""><button class="deatils">Details</button></a>
+                                  <div class="time d-flex flex-wrap justify-content-end">
+                                      <div class="d-flex">
+                                          <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                      </div>
+                                      <div class="d-flex">
+                                          <b>20</b>&nbsp;Hours
+                                      </div>
+                                       
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="heart-icon">
+                              <i class="bi bi-suit-heart-fill"></i>
+                              <!-- <i class="bi bi-suit-heart"></i> -->
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/item3.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="card-text">
+                              <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Officiis, minima.</p>
+                              <h1 class="price mb-0 pb-0">$49.00</h1>
+                              <div class="start-price mb-0 pb-0">Start price</div>
+                              <div class="d-flex justify-content-between align-items-center mt-3">
+                                  <a href=""><button class="deatils">Details</button></a>
+                                  <div class="time d-flex flex-wrap justify-content-end">
+                                      <div class="d-flex">
+                                          <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                      </div>
+                                      <div class="d-flex">
+                                          <b>20</b>&nbsp;Hours
+                                      </div>
+                                       
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="heart-icon">
+                              <i class="bi bi-suit-heart-fill"></i>
+                              <!-- <i class="bi bi-suit-heart"></i> -->
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/item4.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="card-text">
+                              <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Officiis, minima.</p>
+                              <h1 class="price mb-0 pb-0">$49.00</h1>
+                              <div class="start-price mb-0 pb-0">Start price</div>
+                              <div class="d-flex justify-content-between align-items-center mt-3">
+                                  <a href=""><button class="deatils">Details</button></a>
+                                  <div class="time d-flex flex-wrap justify-content-end">
+                                      <div class="d-flex">
+                                          <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                      </div>
+                                      <div class="d-flex">
+                                          <b>20</b>&nbsp;Hours
+                                      </div>
+                                       
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="heart-icon">
+                              <i class="bi bi-suit-heart-fill"></i>
+                              <!-- <i class="bi bi-suit-heart"></i> -->
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/item5.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="card-text">
+                              <p class="card-txt mb-0">Michael Kors Shoes Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Officiis, minima.</p>
+                              <h1 class="price mb-0 pb-0">$49.00</h1>
+                              <div class="start-price mb-0 pb-0">Start price</div>
+                              <div class="d-flex justify-content-between align-items-center mt-3">
+                                  <a href=""><button class="deatils">Details</button></a>
+                                  <div class="time d-flex flex-wrap justify-content-end">
+                                      <div class="d-flex">
+                                          <b>1</b>&nbsp;Day&nbsp;&nbsp;
+                                      </div>
+                                      <div class="d-flex">
+                                          <b>20</b>&nbsp;Hours
+                                      </div>
+                                       
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="heart-icon">
+                              <i class="bi bi-suit-heart-fill"></i>
+                              <!-- <i class="bi bi-suit-heart"></i> -->
+                          </div>
+                      </div>
+          
+          
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+
+
+
+        <!-- ===============================Popup======================== -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content ">
+                    <div class="modal-body quick">
+                        <button type="button" class="btn-close quick-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="quick__heading">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ad ad ad ad ad ad.
+                            Consectetur ipsum nostrum adipisci mollitia?
+                            <div class="row mt-2">
+                                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                                    <div class="quick__img bg-light">
+                                        <img src="assets/img/This item is unavailable _ Etsy.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="quick__detail">
+                                        <div class="product__price d-flex align-items-center">
+                                            <h2 class="product__price-active pt-0">
+                                                <span class="pt-0">₦40.00</span><i class="fas fa-long-arrow-up"></i>
+                                            </h2>
+                                            <div class="product__price-discount">
+                                                <del>₦50.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product__variations ">
+                                        <a href="#" class="product__variations-btn">
+                                            Nike Fashion shoes
+                                        </a>
+
+                                        <a href="#" class="product__variations-btn">
+                                            Shoes
+                                        </a>
+                                        <a href="#" class="product__variations-btn">
+                                            Nike Stylish shoes
+                                        </a>
+                                        <a href="#" class="product__variations-btn">
+                                            Nike
+                                        </a>
+                                        <a href="#" class="product__variations-btn">
+                                            Nike shoes
+                                        </a>
+                                    </div>
+                                    <div class="product__information">
+                                        <div
+                                            class="product__information-text d-flex flex-column justify-content-start align-items-start">
+                                            <h3>Primary Location:</h3>
+                                            <h3>Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur
+                                                adipisicing.</h3>
+                                        </div>
+                                        <div class="product__information-text">
+                                            <h3>OneClick Buy:</h3>
+                                            <p>Yes</p>
+                                        </div>
+                                        <div class="product__information-text">
+                                            <h3>Nationwide Delievry:</h3>
+                                            <p>NO</p>
+                                        </div>
+                                    </div>
+                                    <div class="quick__buttons">
+                                        <button class=" quick__btn">Add to wants</button>
+                                        <button class="quick__btn">View Product</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===============================Popup for greate choice======================== -->
+        <div class="modal fade" id="greateChoice" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog2">
+                <div class="modal-content ">
+                    <div class="modal-body quick d-flex flex-column align-items-center">
+                        <button type="button" class="btn-close quick-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="quick__vector2">
+                            <img src="assets/img/greatechoice.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="quick__alert text-center px-2 mt-3">
+                            <h3 class="mb-3">Greate Choice!</h3>
+                            <p>You have made up to three(3) requests in the Last 24 hours.</p>
+                            <p>Continue Shopping.Sellers are just a dial away.</p>
+                        </div>
+                        <div class="quick__btn-alert  mb-3 mt-3 d-flex justify-content-center w-100">
+                            <button type="button" id="submit-btn" class=" d-flex justify-content-center"><a href=""
+                                    class="">Got it</a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===============================Popup for Onclick popup======================== -->
+        <div class="modal fade" id="oneClickBuy" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog2">
+                <div class="modal-content ">
+                    <div class="modal-body quick d-flex flex-column align-items-center">
+                        <button type="button" class="btn-close quick-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="quick__vector2">
+                            <img src="assets/img/oneclickbuy.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="quick__alert text-center px-2 mt-3">
+                            <h3 class="mb-3">One ClickBuy!</h3>
+                            <p>Its that Simple.</p>
+                            <p>The Seller will contact you soon.</p>
+                            <p>Just eep your phone close.</p>
+                        </div>
+                        <div class="quick__btn-alert  mb-3 mt-3 d-flex justify-content-center w-100">
+                            <button type="button" id="submit-btn" class=" d-flex justify-content-center"><a href=""
+                                    class="">Got it</a></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</div>
+</main>
+
+
+
+    
+<!-- Footer -->
+ <footer class="text-white desktop-footer mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-start py-4 mb-0">
+            <div class="col-lg-4 col-md-4 col-12 ">
+                <div class="d-flex justify-content-center ">
+                    <div class="f-logo-div">
+                        <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" height="100px" class="img-fluid mb-2"></a>
+                    </div>
+                </div>
+                <div class="mb-2 d-flex justify-content-center align-items-center">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Ticktok -->
+                    <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"> <img
+                            src="assets/img/pngaaa.com-4768645.png" alt="" class="img-fluid p-1">
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1 f-social-div" href="#!" role="button"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-6 mb-4 mb-md-0 d-flex justify-content-center">
+                <ul class="list-unstyled mb-0 text-start">
+                    <li class="f-links">
+                        <a href="index.html" class="text-white">Home</a>
+                    </li>
+                    <li class="f-links">
+                        <a href="about-us.html" class="text-white">About Us</a>
+                    </li>
+
+                    <li class="f-links">
+                        <a href="#!" class="text-white">Privacy Policy</a>
+                    </li>
+
+                    <li class="f-links">
+                        <a href="#!" class="text-white">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12  mb-4 mb-md-0 d-flex justify-content-center">
+                <div class="f-contact-heading ">
+                    Kindly Contact Us via:<br>
+                    <span>youremail@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3 copy-right-text" style="background-color: rgba(0, 0, 0, 0.90);">
+        Copyright © bidblock 2022. All rights reserved
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<script src="assets/js/app.js"></script>
+<!-- <script src="assets/Add Tags Input Box JavaScript/script.js"></script> -->
+
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
