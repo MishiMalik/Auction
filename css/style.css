@@ -28,6 +28,9 @@ body {
   box-shadow: 0 0 5px #ccc;
   padding: 7px 18px !important;
   border-radius: 6px; }
+  @media only screen and (max-width: 767px) {
+    .shadow-bg {
+      padding: 7px 10px !important; } }
 
 @media only screen and (max-width: 767px) {
   body {
@@ -1838,6 +1841,9 @@ table.dataTable tbody th, table.dataTable tbody td {
     .products-table-wrapper {
       overflow-x: hidden !important;
       overflow-x: scroll !important; } }
+  @media only screen and (max-width: 767px) {
+    .products-table-wrapper {
+      padding: 10px 10px !important; } }
   .products-table-wrapper::-webkit-scrollbar {
     width: 5px;
     height: 5px; }
@@ -4083,6 +4089,9 @@ input:checked + .slider:before {
   box-shadow: 0 0 5px #ccc;
   border-radius: 6px;
   padding: 20px 30px; }
+  @media only screen and (max-width: 767px) {
+    .shadow-bg-profile {
+      padding: 10px 10px; } }
 
 .profile-btn {
   background-color: #4B3591 !important;
@@ -4171,3 +4180,9 @@ input:checked + .slider:before {
     color: gray !important;
     font-size: 18px;
     opacity: 1 !important; }
+
+@media only screen and (max-width: 767px) {
+  .profile-data {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important; } }

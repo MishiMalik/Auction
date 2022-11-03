@@ -735,6 +735,9 @@
     box-shadow: 0 0 5px #ccc;
     border-radius: 6px;
     padding:20px 30px;
+    @media only screen and (max-width:767px){
+        padding:10px 10px;
+    }
 }
 .profile-btn{
     background-color: #4B3591 !important;
@@ -831,5 +834,12 @@
             font-size: 18px;
             opacity: 1 !important;
         }
+    }
+}
+.profile-data{
+    @media only screen and (max-width:767px){
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
     }
 }
