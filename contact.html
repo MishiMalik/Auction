@@ -34,32 +34,38 @@
 <body class="account-body bg-white" id="account-body">
     <div class="allButFooter mb-4">
 
-        <!-- ====================Header part==================== -->
+        <!--Main Header part=====================================================================-->
         <header class="header fixed-top market-header">
-            <div class="container  header-contain  "  >
+            <div class="container  header-contain  ">
                 <nav class="navbar navbar-expand-md navbar-light ">
                     <div class="container-fluid d-flex  justify-content-between w-100">
-                        <a class="navbar-brand" href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class=""></a>
-        
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/bid-logo.jpeg" alt=""
+                                class=""></a>
+
                         <form class="d-flex nav-input small-nav-input order2">
                             <input class="form-control me-2" type="search" placeholder="Search product ..." id="input1"
                                 aria-label="Search product or sku ...">
-                                <div class="cross">
-                                    <i class="bi bi-x-circle mt-5"></i>
-                                </div>
-                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <div class="cross">
+                                <i class="bi bi-x-circle mt-5"></i>
+                            </div>
+                            <div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
                             </div>
                         </form>
-        
+
                         <div class="destop-header-menu">
                             <ul class="navbar-nav mb-lg-0 ">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="">About</a>
+                                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                              
+
                                 <!-- when user is not registerd -->
                                 <!-- <li class="nav-item">
                                     <a class="nav-link nav-link-icon w-100 " href="">
@@ -68,93 +74,86 @@
                                     </a>                               
                                 </li> -->
                                 <li class="nav-item">
-                                   
-                                    <div class="sec-center ms-4 profile-drop-desktop"> 	
-                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+
+                                    <div class="sec-center ms-4 profile-drop-desktop">
+                                        <input class="dropdown-header" type="checkbox" id="dropdown" name="dropdown" />
                                         <label class="for-dropdown nav-dropdown" for="dropdown">
                                             <a class="nav-link nav-link-icon">
                                                 <i class="fas fa-heart heart"></i>
                                                 <i class="fas fa-user"></i>
                                                 <i class="fal fa-angle-down"></i>
                                             </a>
-                                           
+
                                         </label>
-                                        <div class="section-dropdown"> 
-                                            <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-                                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-                                            <label class="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i class="uil uil-plus"></i></label> -->
-                                            <!-- <div class="section-dropdown-sub"> 
-                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-                                            </div> -->
-                                            <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
-                                            <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                        <div class="section-dropdown">
+                                            <a href="profile.html" class="justify-content-start"><i class="bi bi-person-fill me-2"></i>Profile</a>
+                                            <a href="sign-in.html" class="justify-content-start"><i class="bi bi-box-arrow-in-right me-2"></i>Log Out </a>
                                         </div>
-                                    </div>                              
+                                    </div>
                                 </li>
                             </ul>
                         </div>
 
+                        <!-- icons that will appear on mobile size ===================================-->
                         <div class="small-icons">
                             <div class="d-flex align-items-center">
                                 <div class="search-btn">
                                     <i class="bi bi-search"></i>
                                 </div>
-                            <div class="sec-center me-4 pe-1 profile-drop-mobile "> 	
-                                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                                <label class="for-dropdown nav-dropdown" for="dropdown">
-                                    <a class="nav-link nav-link-icon">
-                                        <i class="fas fa-heart heart"></i>
-                                        <i class="fas fa-user"></i>
-                                        <i class="fal fa-angle-down"></i>
-                                    </a>
-                                   
-                                </label>
-                                <div class="section-dropdown"> 
-                                    <a href="#">Profile<i class="uil uil-arrow-right"></i></a>
-                                    <a href="#">Log Out <i class="uil uil-arrow-right"></i></a>
+                                <div class="sec-center me-4 pe-1 profile-drop-mobile ">
+                                    <input class="dropdown-header" type="checkbox" id="dropdown" name="dropdown" />
+                                    <label class="for-dropdown nav-dropdown" for="dropdown">
+                                        <a class="nav-link nav-link-icon">
+                                            <i class="fas fa-heart heart"></i>
+                                            <i class="fas fa-user"></i>
+                                            <i class="fal fa-angle-down"></i>
+                                        </a>
+
+                                    </label>
+                                    <div class="section-dropdown">
+                                        <a href="profile.html" class="justify-content-start"><i class="bi bi-person-fill me-2"></i> Profile<i class="uil uil-arrow-right"></i></a>
+                                        <a href="sign-in.html" class="justify-content-start"> <i class="bi bi-box-arrow-in-right me-2"></i> Log Out <i class="uil uil-arrow-right"></i></a>
+                                    </div>
                                 </div>
-                            </div> 
-                            <button class="openHeadbtn " onclick="openHeadNav()">&#9776; </button>
+                                <button class="openHeadbtn " onclick="openHeadNav()">&#9776; </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
+
         <!-- =====================small header sidebar============= -->
-        <div class="headsidebar pt-5"   id="HeadSidebar">
+        <div class="headsidebar pt-5" id="HeadSidebar">
             <a href="javascript:void(0)" class="closeHeadbtn" onclick="closeHeadNav()">×</a>
             <ul class="px-4 navbar-nav mb-lg-0 d-flex justify-content-center align-items-center flex-column">
                 <li class=" px-auto">
-                 <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt="" class="head-side-logo img-fluid"></a>
+                    <a href="index.html"><img src="assets/img/bid-logo.jpeg" alt=""
+                            class="head-side-logo img-fluid"></a>
                 </li>
                 <li class=" d-flex align-items-center justify-content-start w-100">
-                   
+
                     <a class="nav-link active ms-4" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="  d-flex align-items-center justify-content-start w-100">
-                    <!-- <div class="head-side-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div> -->
-                    <a class="nav-link ms-4" href="">About Us</a>
+                    <a class="nav-link ms-4" href="about.html">About Us</a>
                 </li>
                 <li class="  d-flex align-items-center justify-content-start w-100">
-                    <!-- <div class="head-side-icon">
-                        <i class="fas fa-user-alt"></i>
-                    </div> -->
-                    <a class="nav-link ms-4" href="">Contact</i></a>
+                    <a class="nav-link ms-4" href="contact.html">Contact</i></a>
                 </li>
-   
                 <li class=" d-flex  w-100 ">
-                    <a class="nav-link ms-4" href="">Privacy Policy</i></a>
+                    <a class="nav-link ms-4" href="privacy.html">Privacy Policy</i></a>
                 </li>
-               
                 <li class="mt-auto  d-flex align-items-center justify-content-center ">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
-                    <a class="nav-link  mx-2 side-sign-btn" href="">Sign In</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-log-in">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                        <polyline points="10 17 15 12 10 7"></polyline>
+                        <line x1="15" y1="12" x2="3" y2="12"></line>
+                    </svg>
+                    <a class="nav-link  mx-2 side-sign-btn" href="sign-in.html">Sign In</a>
                 </li>
             </ul>
         </div>
@@ -285,21 +284,12 @@
         </main>
     </div>
    
-    <!-- =========================================================================================== -->
     <!--========================= BackDrawer section===================== -->
-    <!-- =========================================================================================== -->
     <div class="backdrop" id="backdrop" href="javascript:void(0)" onclick="closeHeadNav()">
 
     </div>
-    <div class="backdrop" id="backdrop2" href="javascript:void(0)" onclick="closeHeadNav()">
-
-    </div>
-
-
-
-    <!-- =========================================================================================== -->
+    
     <!--========================= Desktop Footer===================== -->
-    <!-- =========================================================================================== -->
     <!-- Footer -->
     <footer class="text-white desktop-footer mt-5">
         <div class="container">
