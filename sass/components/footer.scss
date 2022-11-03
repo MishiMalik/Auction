@@ -61,3 +61,15 @@
 .allButFooter2{
     min-height: calc(100vh - 43px);
 }
+.list-unstyled{
+
+    @media only screen and (max-width:768px){
+        .f-links{
+            text-align: center !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+}

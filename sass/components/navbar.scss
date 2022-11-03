@@ -2,7 +2,7 @@
 
 .header {
     padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-bottom: 10px ;
     z-index: 100;
     background-color: #fff;
     box-shadow: 0 0 3px #ccc;
@@ -360,12 +360,13 @@
 }
 @media only screen and (max-width:991px){
     .filter-icon{
-        font-size: 15px;
+        font-size: 18px;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0px 0px 5px 0px; 
+        font-weight: 600;
         
     }
     .sidenav {
@@ -459,6 +460,9 @@
     .destop-header-menu{
         display: none;
     }
+    // .nav-link{
+    //   display: none;
+    // }
     .openHeadbtn{
         display: block;
     }
@@ -929,13 +933,21 @@
     right: 0;
     width: 120px;
     border-radius: 4px;
-
     display: block;
     z-index: 1000 !important;
     opacity: 0;
-    pointer-events: none;
+    // pointer-events: none;
     transform: translateY(20px);
     transition: all 200ms linear;
+    @media only screen and (max-width:991px){
+      opacity: 1;
+      display: none;
+      top:20px
+    }
+    a:hover{
+      color: #102770;
+       background-color: white;
+    }
   }
   .dark-light:checked ~ .sec-center .section-dropdown {
     background-color: #fff;
@@ -1000,10 +1012,10 @@
   .dark-light:checked ~ .sec-center .section-dropdown a {
     color: #102770;
   }
-  a:hover {
-    color: #102770;
-    background-color: white;
-  }
+  // a:hover {
+  //   color: #102770;
+  //   background-color: white;
+  // }
   .dark-light:checked ~ .sec-center .section-dropdown a:hover {
     color: white;
     background-color: #102770;
@@ -1134,4 +1146,11 @@
     @media only screen and (max-width:767px){
         display: block;
     }
+  }
+  .menu:hover{
+    color: #102770;
+   background-color: white;
+   @media only screen and (max-width:991px){
+    background-color: transparent !important;
+  }
   }

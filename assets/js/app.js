@@ -38,7 +38,7 @@ function openHeadNav() {
     document.getElementById("account-body").style.overflowY = 'scroll';
   }
 
-
+// slider ===============================================
   $('.owl-carousel').owlCarousel({
     margin: 10,
     slideBy: 1,
@@ -111,24 +111,24 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-$('.checked').each(function() {
-    $(this).change(function() {
-        if($(this).prop('checked')) {
-            var main = $(this).parents().eq(3)
-            main.prev().toggleClass('active__div')
-            main.css('maxHeight', '0px')
-            var selected = main.prev().find('small').text('\n['+$(this).parents().eq(0).text()+']')
-            selected.html(selected.html().replace('\n', '<br>'))
+// $('.checked').each(function() {
+//     $(this).change(function() {
+//         if($(this).prop('checked')) {
+//             var main = $(this).parents().eq(3)
+//             main.prev().toggleClass('active__div')
+//             main.css('maxHeight', '0px')
+//             var selected = main.prev().find('small').text('\n['+$(this).parents().eq(0).text()+']')
+//             selected.html(selected.html().replace('\n', '<br>'))
             
-            var main2 = main.parents().eq(0).next()
-            main2.children().eq(0).toggleClass('active__div')
-            var content = main2.find('.content__div')
-            content.css('maxHeight', content.prop('scrollHeight') + "px")
-        }
-    })
-})
+//             var main2 = main.parents().eq(0).next()
+//             main2.children().eq(0).toggleClass('active__div')
+//             var content = main2.find('.content__div')
+//             content.css('maxHeight', content.prop('scrollHeight') + "px")
+//         }
+//     })
+// })
 
-// market Filter Fixed
+// ===========================================market Filter Fixed
 $(window).scroll(function(e){ 
     var $el = $('.fixed-filter'); 
     var $acc=$('#account-id');
@@ -147,3 +147,21 @@ $(window).scroll(function(e){
     } 
   });
 
+ //=============================================== upload image of student or teachers data
+ var loadFile = function (event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+  };
+//   ==================================================
+$('.nav-dropdown').on('click',function(){
+    $('.section-dropdown').css('display','block');
+})
+$('main').on('click',function(){
+    $('.section-dropdown').css('display','none');
+})
+
+//===========================================================   datatable
+// $(document).ready(function () {
+//     $('#productsTable').DataTable({
+//     });
+// });
