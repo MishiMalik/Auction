@@ -161,7 +161,7 @@ $('main').on('click',function(){
 })
 
 //===========================================================   datatable
-// $(document).ready(function () {
-//     $('#productsTable').DataTable({
-//     });
-// });
+$(document).ready(function () {
+    $('#productsTable').DataTable({
+    });
+});
