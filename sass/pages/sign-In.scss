@@ -113,7 +113,7 @@
         border: none !important;
         a{
         text-decoration: none;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         padding: 6px 20px !important;
         border: 2px solid $red !important;
@@ -155,7 +155,7 @@
         border: none !important;
         a{
         text-decoration: none;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         padding: 6px 20px !important;
         border: 2px solid $blue !important;
@@ -199,7 +199,7 @@
         border: none !important;
         a{
         text-decoration: none !important;
-        font-size: 1.5rem !important;
+        font-size: 16px !important;
         font-weight: 600 !important;
         padding: 6px 20px !important;
         border: none !important;
@@ -211,20 +211,21 @@
         flex-wrap: 1;
         display: flex;
         justify-content: center;
-        @media only screen and (max-width: 767px) {
-            // display: block  !important;
-            width: 100% !important;
-            padding: 8px 20px !important ;
-            border-radius: 4px ;
-            font-weight: 600 !important;
-            font-size: 1.5rem !important;
-        }
-        @media only screen and (max-width: 479px) {
-            font-size: 1.6rem !important;
-        }
+        // @media only screen and (max-width: 767px) {
+        //     // display: block  !important;
+        //     width: 100% !important;
+        //     padding: 8px 20px !important ;
+        //     border-radius: 4px ;
+        //     font-weight: 600 !important;
+        //     font-size: 1.5rem !important;
+        // }
+        // @media only screen and (max-width: 479px) {
+        //     font-size: 1.6rem !important;
+        // }
         &:hover{
             color: white !important;
             background-color: $blue !important;
+            border: 2px solid white !important;
         }
         }
        
@@ -288,13 +289,13 @@
     display: flex;
     flex-flow: column-reverse;
     height: 65px;
-    margin-top: -14px;
-    @media only screen and (max-width: 767px) {
-       margin-top: -10px;
-    }
-    @media only screen and (max-width: 479px) {
-        margin-top: -10px;
-     }
+    // margin-top: -14px;
+    // @media only screen and (max-width: 767px) {
+    //    margin-top: -10px;
+    // }
+    // @media only screen and (max-width: 479px) {
+    //     margin-top: -10px;
+    //  }
   }
   .sign__field-label, .sign__field-input {
     transition: all 0.2s;
@@ -302,15 +303,15 @@
   }
   
   .sign__field-input {
-      font-size: 13px;
+      font-size: 17px;
       padding: 8px 10px;
       transition: all 0.5s ease-in-out;
       border-radius: 3px !important;
       border: 1px solid #ccc;
-         @media only screen and (max-width: 767px) {
-            font-size: 15px;
-            padding: 8px 10px;
-        }
+        //  @media only screen and (max-width: 767px) {
+        //     font-size: 15px;
+        //     padding: 8px 10px;
+        // }
         // @media only screen and (max-width: 479px) {
         //     font-size: 16px;
         //     padding: 11px 10px;
@@ -325,15 +326,15 @@
   
   .sign__field-label {
     text-transform: capitalize;
-    font-size: 9px;
+    font-size: 14px ;
     color: #666;
     background-color: white;
-    @media only screen and (max-width: 767px) {
-        font-size: 10px;
-    }
-    @media only screen and (max-width: 479px) {
-        font-size: 11px;
-    }
+    // @media only screen and (max-width: 767px) {
+    //     font-size: 10px;
+    // }
+    // @media only screen and (max-width: 479px) {
+    //     font-size: 11px;
+    // }
   }
   /**
   * Translate down and scale the label up to cover the placeholder,
@@ -348,10 +349,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     transform-origin: left bottom;
-    transform: translate(10px, 2.805rem) scale(1.5);
-    @media only screen and (max-width: 767px) {
-        transform: translate(10px, 3.005rem) scale(1.5);
-    }
+    transform: translate(10px, 35px) scale(1.1);
+    // @media only screen and (max-width: 767px) {
+    //     transform: translate(10px, 3.005rem) scale(1.1);
+    // }
     // @media only screen and (max-width: 479px) {
     //     transform: translate(10px, 3.955rem) scale(1.5);
     // }
@@ -425,8 +426,12 @@
 
 .forget-password{
 a{
-    font-size: 13px;
+    font-size: 14px;
 color: #666 !important;
+padding: 0px !important;
+&:hover{
+    color: $blue !important;
+}
 }
 }
   .check2 {
@@ -466,12 +471,12 @@ color: #666 !important;
   .tick2{
       font-size: 1.3rem !important;
       padding-left: 20px !important;
-      @media only screen and (max-width: 767px) {
-        font-size: 1.4rem !important;
-    }
-    @media only screen and (max-width: 479px) {
-        font-size: 1.6rem !important;
-    }
+    //   @media only screen and (max-width: 767px) {
+    //     font-size: 1.4rem !important;
+    // }
+    // @media only screen and (max-width: 479px) {
+    //     font-size: 1.6rem !important;
+    // }
   }
   .check-input .tick input:checked~.badge {
       background-color: white !important;
@@ -834,7 +839,7 @@ color: $blue;
    }
 }
 .online-aucation-img{
-    height: 130px;
+    height: 140px;
     width: auto;
 }
 .logo-div{
@@ -842,4 +847,7 @@ color: $blue;
         justify-content: center !important;
    }
     
+}
+.alert {
+    font-size: 14px;
 }

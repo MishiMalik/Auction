@@ -2238,7 +2238,7 @@ table.dataTable tbody th, table.dataTable tbody td {
     border: none !important; }
     .continue-google__btn button a {
       text-decoration: none;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 500;
       padding: 6px 20px !important;
       border: 2px solid #EA4335 !important;
@@ -2266,7 +2266,7 @@ table.dataTable tbody th, table.dataTable tbody td {
     border: none !important; }
     .sign__btn button a {
       text-decoration: none;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 500;
       padding: 6px 20px !important;
       border: 2px solid #4B3591 !important;
@@ -2295,7 +2295,7 @@ table.dataTable tbody th, table.dataTable tbody td {
     border: none !important; }
     .sign__btn-small button a {
       text-decoration: none !important;
-      font-size: 1.5rem !important;
+      font-size: 16px !important;
       font-weight: 600 !important;
       padding: 6px 20px !important;
       border: none !important;
@@ -2307,19 +2307,10 @@ table.dataTable tbody th, table.dataTable tbody td {
       flex-wrap: 1;
       display: flex;
       justify-content: center; }
-      @media only screen and (max-width: 767px) {
-        .sign__btn-small button a {
-          width: 100% !important;
-          padding: 8px 20px !important;
-          border-radius: 4px;
-          font-weight: 600 !important;
-          font-size: 1.5rem !important; } }
-      @media only screen and (max-width: 479px) {
-        .sign__btn-small button a {
-          font-size: 1.6rem !important; } }
       .sign__btn-small button a:hover {
         color: white !important;
-        background-color: #4B3591 !important; }
+        background-color: #4B3591 !important;
+        border: 2px solid white !important; }
 
 .ask-account {
   text-align: center;
@@ -2369,29 +2360,18 @@ table.dataTable tbody th, table.dataTable tbody td {
 .sign__field {
   display: flex;
   flex-flow: column-reverse;
-  height: 65px;
-  margin-top: -14px; }
-  @media only screen and (max-width: 767px) {
-    .sign__field {
-      margin-top: -10px; } }
-  @media only screen and (max-width: 479px) {
-    .sign__field {
-      margin-top: -10px; } }
+  height: 65px; }
 
 .sign__field-label, .sign__field-input {
   transition: all 0.2s;
   touch-action: manipulation; }
 
 .sign__field-input {
-  font-size: 13px;
+  font-size: 17px;
   padding: 8px 10px;
   transition: all 0.5s ease-in-out;
   border-radius: 3px !important;
   border: 1px solid #ccc; }
-  @media only screen and (max-width: 767px) {
-    .sign__field-input {
-      font-size: 15px;
-      padding: 8px 10px; } }
 
 .sign__field-input:focus {
   border: 2px solid #4B3591;
@@ -2399,15 +2379,9 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 .sign__field-label {
   text-transform: capitalize;
-  font-size: 9px;
+  font-size: 14px;
   color: #666;
   background-color: white; }
-  @media only screen and (max-width: 767px) {
-    .sign__field-label {
-      font-size: 10px; } }
-  @media only screen and (max-width: 479px) {
-    .sign__field-label {
-      font-size: 11px; } }
 
 /**
   * Translate down and scale the label up to cover the placeholder,
@@ -2422,10 +2396,7 @@ table.dataTable tbody th, table.dataTable tbody td {
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(10px, 2.805rem) scale(1.5); }
-  @media only screen and (max-width: 767px) {
-    .sign__field-input:placeholder-shown + .sign__field-label {
-      transform: translate(10px, 3.005rem) scale(1.5); } }
+  transform: translate(10px, 35px) scale(1.1); }
 
 /**
   * By default, the placeholder should be transparent. Also, it should 
@@ -2491,8 +2462,11 @@ table.dataTable tbody th, table.dataTable tbody td {
         font-size: 1.4rem; } }
 
 .forget-password a {
-  font-size: 13px;
-  color: #666 !important; }
+  font-size: 14px;
+  color: #666 !important;
+  padding: 0px !important; }
+  .forget-password a:hover {
+    color: #4B3591 !important; }
 
 .check2 {
   position: absolute !important;
@@ -2531,12 +2505,6 @@ table.dataTable tbody th, table.dataTable tbody td {
 .tick2 {
   font-size: 1.3rem !important;
   padding-left: 20px !important; }
-  @media only screen and (max-width: 767px) {
-    .tick2 {
-      font-size: 1.4rem !important; } }
-  @media only screen and (max-width: 479px) {
-    .tick2 {
-      font-size: 1.6rem !important; } }
 
 .check-input .tick input:checked ~ .badge {
   background-color: white !important; }
@@ -2832,12 +2800,15 @@ table.dataTable tbody th, table.dataTable tbody td {
       padding: 10px 0px !important; } }
 
 .online-aucation-img {
-  height: 130px;
+  height: 140px;
   width: auto; }
 
 @media only screen and (max-width: 479px) {
   .logo-div {
     justify-content: center !important; } }
+
+.alert {
+  font-size: 14px; }
 
 .about-heading {
   font-size: 18px;
