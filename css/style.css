@@ -2373,6 +2373,9 @@ table.dataTable tbody th, table.dataTable tbody td {
   transition: all 0.5s ease-in-out;
   border-radius: 3px !important;
   border: 1px solid #ccc; }
+  @media only screen and (max-width: 479px) {
+    .sign__field-input {
+      font-size: 15px; } }
 
 .sign__field-input:focus {
   border: 2px solid #4B3591;
@@ -2399,6 +2402,9 @@ table.dataTable tbody th, table.dataTable tbody td {
   text-overflow: ellipsis;
   transform-origin: left bottom;
   transform: translate(10px, 35px) scale(1.1); }
+  @media only screen and (max-width: 479px) {
+    .sign__field-input:placeholder-shown + .sign__field-label {
+      transform: translate(10px, 32px) scale(1.1); } }
 
 /**
   * By default, the placeholder should be transparent. Also, it should 

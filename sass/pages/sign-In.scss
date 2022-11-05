@@ -313,10 +313,9 @@
         //     font-size: 15px;
         //     padding: 8px 10px;
         // }
-        // @media only screen and (max-width: 479px) {
-        //     font-size: 16px;
-        //     padding: 11px 10px;
-        // }
+        @media only screen and (max-width: 479px) {
+            font-size: 15px;
+        }
   }
   
   
@@ -355,9 +354,9 @@
     // @media only screen and (max-width: 767px) {
     //     transform: translate(10px, 3.005rem) scale(1.1);
     // }
-    // @media only screen and (max-width: 479px) {
-    //     transform: translate(10px, 3.955rem) scale(1.5);
-    // }
+    @media only screen and (max-width: 479px) {
+        transform: translate(10px, 32px) scale(1.1);
+    }
   }
   /**
   * By default, the placeholder should be transparent. Also, it should 
