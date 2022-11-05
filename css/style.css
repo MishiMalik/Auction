@@ -2360,7 +2360,8 @@ table.dataTable tbody th, table.dataTable tbody td {
 .sign__field {
   display: flex;
   flex-flow: column-reverse;
-  height: 65px; }
+  height: 65px;
+  margin-top: 3px; }
 
 .sign__field-label, .sign__field-input {
   transition: all 0.2s;
@@ -2375,7 +2376,8 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 .sign__field-input:focus {
   border: 2px solid #4B3591;
-  outline: none; }
+  outline: none;
+  background-color: white !important; }
 
 .sign__field-label {
   text-transform: capitalize;

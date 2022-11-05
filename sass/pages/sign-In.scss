@@ -289,6 +289,7 @@
     display: flex;
     flex-flow: column-reverse;
     height: 65px;
+    margin-top: 3px;
     // margin-top: -14px;
     // @media only screen and (max-width: 767px) {
     //    margin-top: -10px;
@@ -322,6 +323,7 @@
   .sign__field-input:focus {
    border: 2px solid $blue;
    outline: none;
+   background-color: white !important;
   }
   
   .sign__field-label {
