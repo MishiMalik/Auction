@@ -159,7 +159,9 @@ $('.nav-dropdown').on('click',function(){
 $('main').on('click',function(){
     $('.section-dropdown').css('display','none');
 })
-
+// $('header').on('click',function(){
+//     $('.section-dropdown').css('display','none');
+// })
 //===========================================================   datatable
 $(document).ready(function () {
     $('#productsTable').DataTable({

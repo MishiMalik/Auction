@@ -271,6 +271,8 @@ body::-webkit-scrollbar-thumb {
   color: white !important;
   text-align: center;
   width: fit-content; }
+  .headsidebar .side-sign-btn:hover {
+    color: white !important; }
 
 .head-side-icon i {
   font-size: 15px;
